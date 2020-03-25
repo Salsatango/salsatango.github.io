@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mainContainer{}
+	
+.Name
+	{width:100px;
+	position:absolute;
+  	font-size: 25px;
+	padding: 14px 16px;}
+
+.Header
+	{display:grid;
+	margin-top:40px;
+	margin-right:50px;
+	margin-left:50px;
+	font-family:"Bebas Neue", cursive;}
+
+
+.topNavigation a{
+	display:inline-block;
+	float:right;
+	color: #303030;
+	text-align: center;
+	padding: 20px 20px;
+  	font-size: 25px;
+	text-decoration:none;
+}
