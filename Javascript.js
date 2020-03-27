@@ -10,8 +10,8 @@ function registerCoords(event) {
 	var scrolled = document.getElementById("page");
 	var z = scrolled.scrollTop;
 	*/
-  document.getElementById("followCursor").style.left = (x-35) + "px";
-  document.getElementById("followCursor").style.top = y-35 + "px";
+  document.getElementById("followCursor").style.left = (x-45) + "px";
+  document.getElementById("followCursor").style.top = y-45 + "px";
 
 }
 
@@ -43,3 +43,8 @@ anime.timeline({loop: false})
     delay: (el, i) => 50 * (i+1)
   })
 // JavaScript Document
+
+var reference = document.getElementById("reference");
+var scrolled = document.scrollTop;
+if (scrolled >= 100) {
+    reference.className = "hide"}
