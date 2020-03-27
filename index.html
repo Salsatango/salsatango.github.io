@@ -1,18 +1,24 @@
 <!doctype html>
-<html>
+<html onscroll="registerCoords(event)" onmousemove="registerCoords(event)"  onmouseenter="startFollowingCursor()" onmouseleave="stopFollowingCursor()">
 <head>
 <meta charset="utf-8">
 <title>Baoshi Hong - design portfolio</title>
 	
-<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	
-		
+	<script src="Javascript.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+
+
 	
 </head>
 
 <body>
-	<div class="mainContainer">
+	<!this is the element that follows the cursor >
+	<img id="followCursor" src="https://www.iconsdb.com/icons/download/gray/circle-512.png">
+	
+	 
+	<div class="mainContainer" >
 		<div class="Header"> 
 				<div class="Name">
 					<p>Baoshi Hong</p>
@@ -24,10 +30,12 @@
 				</div>
 		</div>
 		<div class="firstSectionContainer">
-			
+			<h1 class="ml3">I'm asking for your help because where I come from you don,t get something if you don,t ask for it my name is Baoshi Hong I'm running for the Senate of the United States,</h1>
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+			<script src="Javascript.js" ></script>
 		</div>
 	</div>
-	
 	
 </body>
 </html>

@@ -11,7 +11,7 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-.mainContainer{
+.mainContainer{height:200vh;
 
 }
 	
@@ -45,7 +45,10 @@ p {
 	text-decoration:none;
 }
 
-
+.ml3{
+  font-weight: 900;
+  font-size: 3.5em;
+}
 
 @media only screen and (max-device-width: 600px) {
 	
@@ -57,8 +60,12 @@ p {
 
 #followCursor
 	{position:absolute;
-	transition:0.15s;
-    width:50px;
+	transition-property: opacity, top, left, width;
+	transition-delay: 0.2s, 0s ,0s ,0.3s;
+	transition-duration: 0.15s;
+    width:70px;
     height:auto;
-
+	mix-blend-mode: multiply;
+	z-index:1000 ;
+	/*the Z-index determines the order of superposition*/
 }
