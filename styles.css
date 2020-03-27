@@ -48,7 +48,7 @@ p {
 .ml3{
 	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
   font-weight: 900;
-  font-size: 3.5em;
+  font-size: 5em;
 }
 .circlesvg{
 	fill:none;
@@ -61,7 +61,11 @@ p {
 }
 
 .firstSectionContainer{
+
+}
+.mainParagraphContainer{
 	Margin-left:70px;
+	width:80vw;
 }
 
 @keyframes dash {
