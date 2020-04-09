@@ -70,11 +70,11 @@ right:33vw;
 	position:absolute;
 	z-index:0;
 }
-.dinosaur{position:absolute;
+.🦕{position:absolute;
 mix-blend-mode:screen;
 width:65%;}
 
-.metro{position:absolute;
+.🚂{position:absolute;
 mix-blend-mode: hard-light;
 width:55vw;
 right:10vw;
@@ -138,7 +138,7 @@ padding-left:15vw;
 	width:80vw;}
 
 /*SPAGHETTI CODE HERE WE GO*/
-.title1{ 
+.🖋️{ 
 	font-weight: 400;
   	font-size: 4.5vw;
 	width: 45vw;
@@ -149,7 +149,7 @@ padding-left:15vw;
 		z-index:1000;
 
 	}
-.title2{ 
+.🖋️🖋️{ 
 	}
 
 
@@ -200,14 +200,14 @@ padding-left:15vw;
 	height:100vh;}
 
 
-.hide {
+.🙈 {
   opacity: 0;
 }
 .show {
   opacity: 1;
 }
 
-#paragraph1{
+#📖{
 	font-weight:500;
 	font-size:0.8vw;
 	width:25vw;
@@ -217,7 +217,7 @@ padding-left:15vw;
 	transition-duration:3s;
 	transition-delay:1s;}
 
-#title2{
+#🖋️🖋️{
 	font-weight: 400;
   	font-size: 8vw;
 	width: 40vw;
@@ -230,7 +230,7 @@ padding-left:15vw;
 		z-index:1000;
 
 }
-#title3{
+#🖋️🖋️🖋️{
 	font-weight: 400;
   	font-size: 8vw;
 	width: 40vw;
@@ -243,7 +243,7 @@ padding-left:15vw;
 	transition-delay:0.9s;
 z-index:1000}
 
-#title4{
+#🖋️🖋️🖋️🖋️{
 	font-weight: 400;
   	font-size: 4vw;
 	width: 40vw;
@@ -256,7 +256,7 @@ z-index:1000}
 	transition-delay:0.9s;
 z-index:1000}
 
-#title5{
+#🖋️🖋️🖋️🖋️🖋️{
 	font-weight: 400;
   	font-size: 8vw;
 	width: 40vw;
@@ -269,10 +269,10 @@ z-index:1000}
 	transition-delay:0.9s;
 	z-index:1000;}
 
-#paragraph2{
+#📖📖{
 	font-weight:500;
 	padding-top:10vw;
-	font-size:1vw;
+	font-size:1.2vw;
 	width:37vw;
 	mix-blend-mode:multiply;
 	margin-left:0vw;
@@ -281,9 +281,9 @@ z-index:1000}
 	transition-delay:0.2s;
 z-index:1000}
 
-#paragraph3{
+#📖📖📖{
 font-weight:500;
-	font-size:1vw;
+	font-size:1.2vw;
 	width:35vw;
 	mix-blend-mode:multiply;
 	margin-left:35vw;
@@ -293,7 +293,7 @@ font-weight:500;
 	transition-delay:2s;
 z-index:1000}
 
-#paragraph4{
+#📖📖📖📖{
 	font-weight:500;
 	font-size:1.3vw;
 	width:35vw;
@@ -305,7 +305,7 @@ z-index:1000}
 	transition-delay:0.8s;
 z-index:1000}
 
-#paragraph5{
+#📖📖📖📖📖📖{
 	float:right;
 	font-weight:500;
 	font-size:1vw;
@@ -318,7 +318,7 @@ z-index:1000}
 	transition-delay:2s;
 	z-index:1000;}
 
-#paragraph6{
+#📖📖📖📖📖📖📖{
 	float:left;
 	font-weight:500;
 	font-size:1vw;
@@ -334,7 +334,7 @@ z-index:1000}
 
 
 
-.larger{font-size:200%;
+.🍰{font-size:200%;
 letter-spacing: 0.3vw;}
 .left{float:left;}
 .right{float:right;
@@ -348,25 +348,16 @@ letter-spacing: 0.3vw;}
 #fullScrollContainer{height:100vh;
 margin-top:0;
 	margin-bottom:0;
-
 }
 
 
 
 
-
-
-
-
-
-
-
-/* for the shrimp website*/
+/* for the 🦐 page*/
 #backgroundVideo{position:absolute;
   min-width: 100%;
 	min-height: 100vh;
 	z-index:-1;
-	
  }
 
 
@@ -375,7 +366,7 @@ margin-top:0;
 	margin-right:0;
   	font-size: 25px;
 	padding: 20px 20px;}
-.HeaderShrimp
+.Header🦐
 	{
 	position:absolute;
 	margin-top:0px;
@@ -383,18 +374,18 @@ margin-top:0;
 	margin-left:0px;
 	font-family:"Bebas Neue", cursive;}
 
-.topNavigationShrimp{
+.topNavigation🦐{
 	display:inline-block;
 	float:right;
 	transition: 1s;
 }
 
-.mainContainerShrimps{
+.mainContainer🦐s{
 maxwidth:100em;
 	overflow:hidden;
 }
 
-#followCursorShrimp
+#followCursor🦐
 	{position:absolute;
 	transition-property: opacity, top, left, width;
 	transition-delay: 0.2s, 0s ,0s ,0.3s;
@@ -405,7 +396,7 @@ maxwidth:100em;
 	z-index:1000 ;
 }
 
-.circlesvgShrimp{
+.circlesvg🦐{
 	fill:#0400ff;
 	stroke:#231f20;
 	stroke-width:0;

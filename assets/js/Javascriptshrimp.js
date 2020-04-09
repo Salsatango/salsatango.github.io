@@ -8,15 +8,15 @@ function registerCoords(event) {
 	var scrolled = document.getElementById("page");
 	var z = scrolled.scrollTop;
 	*/
-  document.getElementById("followCursorShrimp").style.left = (x-200) + "px";
-  document.getElementById("followCursorShrimp").style.top = y-200 + "px";
+  document.getElementById("followCursor🦐").style.left = (x-200) + "px";
+  document.getElementById("followCursor🦐").style.top = y-200 + "px";
 
 }
 
 function stopFollowingCursor() {
-  document.getElementById("followCursorShrimp").style.opacity = "0" ;
+  document.getElementById("followCursor🦐").style.opacity = "0" ;
 }
 
 function startFollowingCursor() {
-  document.getElementById("followCursorShrimp").style.opacity = "70";
+  document.getElementById("followCursor🦐").style.opacity = "70";
 }

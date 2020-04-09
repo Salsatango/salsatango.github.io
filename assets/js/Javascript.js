@@ -1,18 +1,13 @@
 
-//Function that takes the cursor position (event)
+//Function that takes the cursor position (event) I used this to make the blue circle follow the cursor.
 window.scrollTo(0,0);
 
 function registerCoords(event) {
   	var x = event.pageX;
   	var y = event.pageY;
-	/*
-	how to get the vertical scroll pixels of an element
-	var scrolled = document.getElementById("page");
-	var z = scrolled.scrollTop;
-	*/
+
   document.getElementById("followCursor").style.left = (x-150) + "px";
   document.getElementById("followCursor").style.top = y-150 + "px";
-
 }
 
 function stopFollowingCursor() {
@@ -25,10 +20,7 @@ function startFollowingCursor() {
 
 
 
-
-
-
-/*Function to animate text, taken from https://tobiasahlin.com 
+/*This is a function to animate text, taken from https://tobiasahlin.com 
 It uses anime.js */
 
 // Wrap every letter in a span
@@ -43,62 +35,63 @@ anime.timeline({loop: false})
     duration: 2000,
     delay: (el, i) => 50 * (i+1)
   })
-// JavaScript Document
+
+
 
 var reference = document.getElementById("reference");
 var scrolled = document.scrollTop;
 if (scrolled >= 100) {
-    reference.className = "hide"}
+    reference.className = "🙈"}
 
 
 
 // fade out a title when mouse is moved over DIV
 function fadeOnScroll() {
-   document.getElementById("title2").style.opacity = "0";
+   document.getElementById("🖋️🖋️").style.opacity = "0";
 }
 
 function fadeOnScroll2() {
-   document.getElementById("title3").style.opacity = "0";
+   document.getElementById("🖋️🖋️🖋️").style.opacity = "0";
 }
 
 function fadeOnScroll3() {
-   document.getElementById("title4").style.opacity = "0";
+   document.getElementById("🖋️🖋️🖋️🖋️").style.opacity = "0";
 }
 
-// fade in when mouse is moved over DIV
+// fade in when mouse is moved over DIV. These could really have been made better, I think.
+
 function fadeInOnScroll() {
-   document.getElementById("paragraph2").classList.remove("hide");
-	document.getElementById("paragraph3").classList.remove("hide");
+   document.getElementById("📖📖").classList.remove("🙈");
+	document.getElementById("📖📖📖").classList.remove("🙈");
 }
 
 function fadeInOnScroll2() {
-   document.getElementById("paragraph1").classList.remove("hide");
+   document.getElementById("📖").classList.remove("🙈");
 
 }
 
 function fadeInOnScroll3() {
-   document.getElementById("paragraph4").classList.remove("hide");
+   document.getElementById("📖📖📖📖").classList.remove("🙈");
 
 }
 
 function fadeInOnScroll4() {
-   document.getElementById("paragraph5").classList.remove("hide");
+   document.getElementById("📖📖📖📖📖📖").classList.remove("🙈");
 
 }
 function fadeInOnScroll5() {
-   document.getElementById("paragraph6").classList.remove("hide");
+   document.getElementById("📖📖📖📖📖📖📖").classList.remove("🙈");
 
 }
 
 
-// JavaScript Document
 
 var reference = document.getElementById("reference");
 var scrolled = document.scrollTop;
 if (scrolled >= 100) {
-    reference.className = "hide"}
+    reference.className = "🙈"}
 
-// scroll Fullpage
+// scroll an entire page everytime you scroll.
 
 
 var page = new FullPage("#fullScrollContainer"); {
@@ -106,8 +99,6 @@ var page = new FullPage("#fullScrollContainer"); {
 	touch: true;
 }
 
-
-/*BLOTTER JS EXAMPLE*/
 
 
 
