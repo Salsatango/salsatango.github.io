@@ -49,3 +49,12 @@ var reference = document.getElementById("reference");
 var scrolled = document.scrollTop;
 if (scrolled >= 100) {
     reference.className = "hide"}
+
+
+// scroll Fullpage
+
+
+var page = new FullPage("#fullScrollContainer"); {
+    animationDuration: 2000;
+}
+ 
