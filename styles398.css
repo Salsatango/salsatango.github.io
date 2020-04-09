@@ -77,7 +77,13 @@ width:65%;}
 mix-blend-mode: hard-light;
 width:55vw;
 right:10vw;
-
+}
+.Verdun{
+position:absolute;
+mix-blend-mode: darken;
+width:45vw;
+left:5vw;
+z-index:-1;
 }
 
 
@@ -96,12 +102,15 @@ right:10vw;
 .firstSectionContainer{
 
 }
-
+/*Yeah, all of these are the same. I could have reused them, I know.*/
 .secondSectionContainer{height:100vh;
 padding-top:15vh;}
 
 .thirdSectionContainer{height:100vh;
-padding-top:0vh;}
+margin-top:20vh;}
+
+.fourthSectionContainer{height:100vh;
+margin-top:20vh;}
 
 .mainParagraphContainer{
 	Margin-left:200px;
@@ -109,11 +118,14 @@ padding-top:0vh;}
 	width:80vw;
 	
 }
-
+/*These too are too repetitive.*/
 .titleContainerPage2{
 	Margin-left:200px;
 	width:80vw;}
 .titleContainerPage3{
+	Margin-left:200px;
+	width:80vw;}
+.titleContainerPage4{
 	Margin-left:200px;
 	width:80vw;}
 
@@ -135,8 +147,6 @@ padding-top:0vh;}
 .colorGroup1{color:#FF0E00;}
 .colorGroup2{color:#19FF0D;}
 .colorGroup3{color:#D74C94;}
-
-
 .unselectable{user-select: none;}
 
 
@@ -220,6 +230,19 @@ padding-top:0vh;}
 	transition-duration:3s;
 	transition-delay:0.9s;}
 
+#title4{
+	font-weight: 400;
+  	font-size: 8em;
+	width: 40vw;
+	right:5vw;
+	line-height:100%;
+	font-family:'Anton', sans-serif;
+	mix-blend-mode:screen;
+	position:absolute;
+	transition-duration:3s;
+	transition-delay:0.9s;}
+
+
 #paragraph2{
 	font-weight:500;
 	font-size:2em;
@@ -242,15 +265,31 @@ font-weight:500;
 	transition-delay:2s;}
 
 #paragraph4{
-font-weight:500;
+	font-weight:500;
 	font-size:2em;
 	width:35vw;
 	mix-blend-mode:difference;
 	margin-left:0vw;
-	margin-top:20vh;
+	padding-top:15vh;
 	font-family:'Song Myung', serif;
 	transition-duration:1s;
 	transition-delay:0.5s;}
+
+#paragraph5{
+	float:right;
+	font-weight:500;
+	font-size:1.5em;
+	width:30vw;
+	mix-blend-mode:difference;
+	margin-left:0vw;
+	padding-top:0vh;
+	font-family:'Song Myung', serif;
+	transition-duration:1s;
+	transition-delay:2s;
+	z-index:1000;}
+
+
+
 
 .larger{font-size:200%;
 letter-spacing: 0.3vw;}
@@ -331,3 +370,5 @@ maxwidth:100em;
 	opacity:0.5;
 
 }
+
+.slide-navigation{display:none;}

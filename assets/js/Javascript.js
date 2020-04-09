@@ -61,6 +61,10 @@ function fadeOnScroll2() {
    document.getElementById("title3").style.opacity = "0";
 }
 
+function fadeOnScroll3() {
+   document.getElementById("title4").style.opacity = "0";
+}
+
 // fade in when mouse is moved over DIV
 function fadeInOnScroll() {
    document.getElementById("paragraph2").classList.remove("hide");
@@ -74,6 +78,11 @@ function fadeInOnScroll2() {
 
 function fadeInOnScroll3() {
    document.getElementById("paragraph4").classList.remove("hide");
+
+}
+
+function fadeInOnScroll4() {
+   document.getElementById("paragraph5").classList.remove("hide");
 
 }
 
