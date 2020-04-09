@@ -25,14 +25,14 @@ p {
 	{
 	display:inline-block;
 	margin-right:0;
-  	font-size: 25px;
+  	font-size: 1vw;
 }
 
 .Header
 	{
 	margin-top:40px;
-	margin-right:200px;
-	margin-left:200px;
+	Margin-right:10vw;
+	Margin-left:10vw;
 	font-family:'Oswald', sans-serif;}
 
 .topNavigation{
@@ -66,7 +66,7 @@ right:33vw;
 	z-index:0;
 }
 .Jar3{height:80vh;
-right:66vw;
+	right:66vw;
 	position:absolute;
 	z-index:0;
 }
@@ -101,39 +101,46 @@ z-index:-1;
 }
 
 .firstSectionContainer{
-
+	width:100vw;
 }
 /*Yeah, all of these are the same. I could have reused them, I know.*/
 .secondSectionContainer{height:100vh;
-padding-top:15vh;}
+	width:100vw;
+overflow:hidden;}
 
 .thirdSectionContainer{height:100vh;
-margin-top:20vh;}
+	width:100vw;
+overflow:hidden;}
 
 .fourthSectionContainer{height:100vh;
-margin-top:20vh;}
+	width:100vw;
+
+overflow:hidden;}
 
 .mainParagraphContainer{
-	Margin-left:200px;
-	margin-top:120px;
+	Margin-left:10vw;
+	margin-top:5vw;
 	width:80vw;
 	
 }
 /*These too are too repetitive.*/
 .titleContainerPage2{
-	Margin-left:200px;
+	padding-top:15vh;
+padding-left:15vw;
 	width:80vw;}
 .titleContainerPage3{
-	Margin-left:200px;
+	padding-top:15vh;
+padding-left:15vw;
 	width:80vw;}
 .titleContainerPage4{
-	Margin-left:200px;
+	padding-top:15vh;
+padding-left:15vw;
 	width:80vw;}
 
 /*SPAGHETTI CODE HERE WE GO*/
 .title1{ 
 	font-weight: 400;
-  	font-size: 8em;
+  	font-size: 4.5vw;
 	width: 45vw;
 	line-height:100%;
 	font-family:'Anton', sans-serif;
@@ -198,8 +205,8 @@ margin-top:20vh;}
 }
 
 #paragraph1{
-		font-weight:500;
-	font-size:1.5em;
+	font-weight:500;
+	font-size:0.8vw;
 	width:25vw;
 	mix-blend-mode:multiply;
 	margin-left:0vw;
@@ -208,8 +215,8 @@ margin-top:20vh;}
 	transition-delay:1s;}
 
 #title2{
-		font-weight: 400;
-  	font-size: 15em;
+	font-weight: 400;
+  	font-size: 8vw;
 	width: 40vw;
 	line-height:100%;
 	font-family:'Anton', sans-serif;
@@ -221,7 +228,7 @@ margin-top:20vh;}
 }
 #title3{
 	font-weight: 400;
-  	font-size: 15em;
+  	font-size: 8vw;
 	width: 40vw;
 	right:15vw;
 	line-height:100%;
@@ -233,7 +240,7 @@ margin-top:20vh;}
 
 #title4{
 	font-weight: 400;
-  	font-size: 8em;
+  	font-size: 4vw;
 	width: 40vw;
 	right:5vw;
 	line-height:100%;
@@ -246,7 +253,8 @@ margin-top:20vh;}
 
 #paragraph2{
 	font-weight:500;
-	font-size:2em;
+	padding-top:10vw;
+	font-size:1vw;
 	width:37vw;
 	mix-blend-mode:multiply;
 	margin-left:0vw;
@@ -256,7 +264,7 @@ margin-top:20vh;}
 
 #paragraph3{
 font-weight:500;
-	font-size:2em;
+	font-size:1vw;
 	width:35vw;
 	mix-blend-mode:multiply;
 	margin-left:35vw;
@@ -267,7 +275,7 @@ font-weight:500;
 
 #paragraph4{
 	font-weight:500;
-	font-size:2em;
+	font-size:1.3vw;
 	width:35vw;
 	mix-blend-mode:difference;
 	margin-left:0vw;
@@ -279,7 +287,7 @@ font-weight:500;
 #paragraph5{
 	float:right;
 	font-weight:500;
-	font-size:1.5em;
+	font-size:1vw;
 	width:30vw;
 	mix-blend-mode:difference;
 	margin-left:0vw;
