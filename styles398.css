@@ -2,7 +2,7 @@
 /* CSS Document */
 
 html{	
-	cursor:crosshair;
+	cursor:text;
 }
 body{margin:0;}
 
@@ -13,24 +13,26 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+#REFERENCE{}
 .mainContainer{height:200vh;
 
 }
 
 
 .Name
-	{width:500px;
+	{
 	display:inline-block;
 	margin-right:0;
   	font-size: 25px;
-	padding: 20px 20px;}
+}
 
 .Header
 	{
 	margin-top:40px;
-	margin-right:50px;
-	margin-left:50px;
-	font-family:"Bebas Neue", cursive;}
+	margin-right:200px;
+	margin-left:200px;
+	font-family:'Oswald', sans-serif;}
 
 .topNavigation{
 	display:inline-block;
@@ -49,10 +51,60 @@ p {
 }
 
 .ml3{
-	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-  font-weight: 700;
-  font-size: 2em;
 }
+
+/*SPAGHETTI CODE HERE WE GO*/
+.title1{ 
+	font-weight: 400;
+  	font-size: 7em;
+	width: 45vw;
+	line-height:100%;
+	font-family:'Abril Fatface', cursive;
+
+	mix-blend-mode:multiply;
+
+	}
+.title2{ 
+	font-weight: 400;
+  	font-size: 15em;
+	width: 40vw;
+	line-height:100%;
+	font-family:'Anton', sans-serif;
+	color:#FF0E00;
+	mix-blend-mode:multiply;
+
+	}
+
+
+.colorGroup1{color:#FF0E00;}
+.unselectable{user-select: none;}
+
+
+
+.paragraph1{font-weight:500;
+font-size:1.5em;
+width:35vw;
+mix-blend-mode:color-burn;
+margin-left:0vw;
+font-family:'Song Myung', serif;
+}
+
+.Jar1{height:80vh;
+right:0vw;
+	position:absolute;
+}
+.Jar2{height:80vh;
+right:33vw;
+	position:absolute;
+}
+.Jar3{height:80vh;
+right:66vw;
+	position:absolute;
+}
+
+
+
+
 .circlesvg{
 	fill:none;
 	stroke:#231f20;
@@ -66,13 +118,28 @@ p {
 }
 
 .firstSectionContainer{
-
 }
+
+.secondSectionContainer{}
+
 .mainParagraphContainer{
-	Margin-left:70px;
+	Margin-left:200px;
 	margin-top:150px;
 	width:80vw;
 }
+
+.titleContainerPage2{
+	Margin-left:200px;
+	margin-top:150px;
+	width:80vw;}
+
+
+
+::selection {
+  color: white;
+  background: black;
+}
+
 
 @keyframes dash {
 	  to {

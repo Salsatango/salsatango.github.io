@@ -51,10 +51,39 @@ if (scrolled >= 100) {
     reference.className = "hide"}
 
 
+// another one
+var textWrapper = document.querySelector('.ml4');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml4 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 100,
+    delay: (el, i) => 50 * (i+40)
+  })
+
+
+
+// fade out a title after a few seconds
+
+
+
+// JavaScript Document
+
+var reference = document.getElementById("reference");
+var scrolled = document.scrollTop;
+if (scrolled >= 100) {
+    reference.className = "hide"}
+
 // scroll Fullpage
 
 
 var page = new FullPage("#fullScrollContainer"); {
     animationDuration: 2000;
+	touch: true;
 }
+
+
  
