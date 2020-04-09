@@ -10,8 +10,8 @@ function registerCoords(event) {
 	var scrolled = document.getElementById("page");
 	var z = scrolled.scrollTop;
 	*/
-  document.getElementById("followCursor").style.left = (x-45) + "px";
-  document.getElementById("followCursor").style.top = y-45 + "px";
+  document.getElementById("followCursor").style.left = (x-150) + "px";
+  document.getElementById("followCursor").style.top = y-150 + "px";
 
 }
 
@@ -83,6 +83,10 @@ function fadeInOnScroll3() {
 
 function fadeInOnScroll4() {
    document.getElementById("paragraph5").classList.remove("hide");
+
+}
+function fadeInOnScroll5() {
+   document.getElementById("paragraph6").classList.remove("hide");
 
 }
 

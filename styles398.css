@@ -142,19 +142,22 @@ padding-left:15vw;
 	font-weight: 400;
   	font-size: 4.5vw;
 	width: 45vw;
-	line-height:100%;
+	line-height:105%;
 	font-family:'Anton', sans-serif;
 	mix-blend-mode:multiply;
-	letter-spacing: 0.3vw;
+	letter-spacing: 0.3vw
+		z-index:1000;
 
 	}
 .title2{ 
 	}
 
 
-.colorGroup1{color:#FF0E00;}
+.colorGroup1{color:#DB00FF;}
 .colorGroup2{color:#19FF0D;}
-.colorGroup3{color:#D74C94;}
+.colorGroup3{color:#FF3E00;}
+.colorGroup4{color:black;}
+.colorGroup5{color:#D4D4D4;}
 .unselectable{user-select: none;}
 
 
@@ -186,11 +189,11 @@ padding-left:15vw;
 	{position:absolute;
 	transition-property: opacity, top, left, width;
 	transition-delay: 0.2s, 0s ,0s ,0.3s;
-	transition-duration: 0.15s;
-    width:90px;
+	transition-duration: 0.2s;
+    width:300px;
     height:auto;
-	mix-blend-mode: multiply;
-	z-index:1000 ;
+	mix-blend-mode: color-burn;
+	z-index:500;
 	/*the Z-index determines the order of superposition*/
 }
 .section{width:100vw;
@@ -223,7 +226,8 @@ padding-left:15vw;
 	mix-blend-mode:multiply;
 	position:absolute;
 	transition-duration:2s;
-	transition-delay:0.2s;
+	transition-delay:0.2s
+		z-index:1000;
 
 }
 #title3{
@@ -236,7 +240,8 @@ padding-left:15vw;
 	mix-blend-mode:screen;
 	position:absolute;
 	transition-duration:3s;
-	transition-delay:0.9s;}
+	transition-delay:0.9s;
+z-index:1000}
 
 #title4{
 	font-weight: 400;
@@ -245,11 +250,24 @@ padding-left:15vw;
 	right:5vw;
 	line-height:100%;
 	font-family:'Anton', sans-serif;
-	mix-blend-mode:screen;
+	mix-blend-mode:overlay;
 	position:absolute;
 	transition-duration:3s;
-	transition-delay:0.9s;}
+	transition-delay:0.9s;
+z-index:1000}
 
+#title5{
+	font-weight: 400;
+  	font-size: 8vw;
+	width: 40vw;
+	right:5vw;
+	line-height:110%;
+	font-family:'Anton', sans-serif;
+	mix-blend-mode:difference;
+	position:absolute;
+	transition-duration:3s;
+	transition-delay:0.9s;
+	z-index:1000;}
 
 #paragraph2{
 	font-weight:500;
@@ -260,7 +278,8 @@ padding-left:15vw;
 	margin-left:0vw;
 	font-family:'Song Myung', serif;
 	transition-duration:2s;
-	transition-delay:0.2s;}
+	transition-delay:0.2s;
+z-index:1000}
 
 #paragraph3{
 font-weight:500;
@@ -271,7 +290,8 @@ font-weight:500;
 	margin-top:5vh;
 	font-family:'Song Myung', serif;
 	transition-duration:2s;
-	transition-delay:2s;}
+	transition-delay:2s;
+z-index:1000}
 
 #paragraph4{
 	font-weight:500;
@@ -282,7 +302,8 @@ font-weight:500;
 	padding-top:15vh;
 	font-family:'Song Myung', serif;
 	transition-duration:1s;
-	transition-delay:0.5s;}
+	transition-delay:0.8s;
+z-index:1000}
 
 #paragraph5{
 	float:right;
@@ -290,12 +311,25 @@ font-weight:500;
 	font-size:1vw;
 	width:30vw;
 	mix-blend-mode:difference;
-	margin-left:0vw;
+	margin-right:5vw;
 	padding-top:0vh;
 	font-family:'Song Myung', serif;
 	transition-duration:1s;
 	transition-delay:2s;
 	z-index:1000;}
+
+#paragraph6{
+	float:left;
+	font-weight:500;
+	font-size:1vw;
+	width:30vw;
+	mix-blend-mode:difference;
+	margin-left:5vw;
+	padding-top:25vh;
+	font-family:'Song Myung', serif;
+	transition-duration:1s;
+	transition-delay:0.5s;
+	z-index:1001;}
 
 
 
@@ -331,6 +365,8 @@ margin-top:0;
 #backgroundVideo{position:absolute;
   min-width: 100%;
 	min-height: 100vh;
+	z-index:-1;
+	
  }
 
 
