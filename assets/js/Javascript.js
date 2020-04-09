@@ -51,23 +51,31 @@ if (scrolled >= 100) {
     reference.className = "hide"}
 
 
-// another one
-var textWrapper = document.querySelector('.ml4');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: false})
-  .add({
-    targets: '.ml4 .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 100,
-    delay: (el, i) => 50 * (i+40)
-  })
+// fade out a title when mouse is moved over DIV
+function fadeOnScroll() {
+   document.getElementById("title2").style.opacity = "0";
+}
 
+function fadeOnScroll2() {
+   document.getElementById("title3").style.opacity = "0";
+}
 
+// fade in when mouse is moved over DIV
+function fadeInOnScroll() {
+   document.getElementById("paragraph2").classList.remove("hide");
+	document.getElementById("paragraph3").classList.remove("hide");
+}
 
-// fade out a title after a few seconds
+function fadeInOnScroll2() {
+   document.getElementById("paragraph1").classList.remove("hide");
 
+}
+
+function fadeInOnScroll3() {
+   document.getElementById("paragraph4").classList.remove("hide");
+
+}
 
 
 // JavaScript Document

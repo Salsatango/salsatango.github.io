@@ -1,10 +1,10 @@
 <!doctype html>
-<html onscroll="registerCoords(event)" onmousemove="registerCoords(event)"  onmouseenter="startFollowingCursor()" onmouseleave="stopFollowingCursor()">
-<head>
+<html onscroll="fadeOnScroll()" onmousemove="registerCoords(event)" onmouseenter="startFollowingCursor()" onmouseleave="stopFollowingCursor()">
+<head> 
 <meta charset="utf-8">
 <title>DART398 - Final Project</title>
 	<link rel="icon" href="/assets/images/favicon.png">
-<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Major+Mono+Display|Oswald|Song+Myung&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Major+Mono+Display|Oswald|Palanquin+Dark|Song+Myung&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles398.css">
 	<script src="assets/js/fullPage.js"></script>
 	<script src="assets/js/Javascript.js" ></script>
@@ -28,7 +28,7 @@
 	-->
 	
 	
-	<div id="fullScrollContainer" >
+	<div id="fullScrollContainer" onmousemove="fadeInOnScroll2()">
 		<section class="section">
 			<div class="Header"> 
 					<div class="Name colorGroup1">
@@ -38,24 +38,36 @@
  						<p>Concordia University Fall 2020</p>
 					</div>
 			</div>
-			<div class="firstSectionContainer">
+			<div class="firstSectionContainer" >
 				<div id="reference" class="mainParagraphContainer">
-					<img class="Jar1 unselectable" src="assets/images/jar1.png" alt="Mason Jar">
-					<img class="Jar2 unselectable" src="assets/images/jar2.png" alt="Mason Jar">
-					<img class="Jar3 unselectable" src="assets/images/jar3.png" alt="Mason Jar">
-					<h1 class="ml3 title1 colorGroup1">168 Hours:A Polyvocal Book in The Era of Coronavirus</h1>
-					<h1 class="ml4 paragraph1 colorGroup1">This is the final project for a bookmaking class taught by M. Wright at Concordia university titled "Un.bound in Perfect Print." It was in the Winter semester of the year 2020, and it was a strange year already. A global pandemic ravaged the globe. Justin Trudeau told us to stay home. This project was supposed to be something completely different, but the circumstances made me change it into a web-design project.  </h1>
+					<img class="Jar1 unselectable" src="assets/images/jar4.png" alt="Mason Jar">
+					<img class="Jar2 unselectable" src="assets/images/jar5.png" alt="Mason Jar">
+					<img class="Jar3 unselectable" src="assets/images/jar6.png" alt="Mason Jar">
+					<h1 class="ml3 title1 colorGroup1" >168 Hours:A Polyvocal Book in The Era of Social Distancing</h1>
+					<h1 id="paragraph1" class="paragraph1 colorGroup1 hide">This is the final project for a bookmaking class taught by M. Wright at Concordia university titled "Un.bound in Perfect Print." It was in the Winter semester of the year 2020, and it was a strange year already. A global pandemic was ravaging the world and Justin Trudeau told us to stay home. This project was supposed to be something completely different, but the circumstances made me change it into a web-design project.  </h1>
 					
 				</div>
 
 			</div>
 		</section>
 		<section class="section">
-			<div class="secondSectionContainer">
-				<div class="titleContainerPage2">
-				<h1 class="ml5 title2">what is a book anyways?</h1>
+			<div class="secondSectionContainer" onmousemove="fadeOnScroll();fadeInOnScroll()">
+				<div class="titleContainerPage2" >
+				<h1 id="title2" class="ml5 title2 colorGroup2">what is a book anyways?</h1>
+					<img class="dinosaur unselectable" src="assets/images/dinosaur.png" alt="probably a brontosaurus">
+					<p id="paragraph2" class="paragraph2 colorGroup2 hide">It was the Ides of March, and I ventured outside. I wanted to print some labels for a personal project at Copies Concordia. It was sunny, but there was a crip wind that slapped you in the face and made your cheeks kind of numb. There were a lot of people downtown. The seriousness of the situation hadn’t set in yet. </br> <span class= "larger">***</span></p>
+					<p id="paragraph3" class="paragraph3 colorGroup2 hide">  In the city where I was born, BenXi, there were people with little carts full of books. They would roam the neighborhoods and yell at the windows that they were selling books. Sometimes, they would even go door to door. My mom bought me two books with a lot of pictures. And so, the first book I read was an encyclopedia of animals. The second book I read was about dinosaurs. I think this was in 1997-1998. I cut some of the animals out, and I was sad to find that this ruined the contents on the other side. </br><span class= "larger">***</span></p>
 				</div>
 				
+			</div>
+		</section>
+		<section class="section">
+			<div class="thirdSectionContainer" onmousemove="fadeOnScroll2();fadeInOnScroll3()">
+				<div class="titleContainerPage3" >
+					<img class="metro unselectable" src="assets/images/metro.png" alt="Concordia station">
+					<h1 id="title3" class="title3 colorGroup3">Tunnels: a source of anxiety.</h1>
+					<p id="paragraph4" class="colorGroup3 hide">This is Guy-Concordia Metro station, where you got off when you went to Concordia. It was very convenient, because you didn’t have to go outside during the Winter, as the university was connected to the station by tunnels. It was like this at Université de Montréal too, but as UdeM was up the mountain, there was a giant escalator that conveyor-belted students up the slope. The escalator kept breaking. Like in a fairy tale, every day the school would repair it during the night, and the weight of the students would break it during the day. They wanted to repair it for good during the summer break, but the escalator killed someone. They shut that tunnel down for two (2!) years and we had to scale the mountains using the old worn out concrete steps.</br><span class= "larger">***</span> </p>
+				</div>
 			</div>
 		</section>
 		
