@@ -6,8 +6,8 @@ function registerCoords(event) {
   	var x = event.pageX;
   	var y = event.pageY;
 
-  document.getElementById("followCursor").style.left = (x-150) + "px";
-  document.getElementById("followCursor").style.top = y-150 + "px";
+  document.getElementById("followCursor").style.left = (x-45) + "px";
+  document.getElementById("followCursor").style.top = y-45 + "px";
 }
 
 function stopFollowingCursor() {

@@ -87,6 +87,11 @@ left:5vw;
 z-index:-1;
 }
 
+.groceries{
+margin-top:100px;
+width:45vw;
+}
+
 
 .circlesvg{
 	fill:none;
@@ -114,6 +119,13 @@ overflow:hidden;}
 
 .fourthSectionContainer{height:100vh;
 	width:100vw;
+
+overflow:hidden;}
+
+.lastContainer
+{height:100vh;
+	width:100vw;
+	margin-top:100px;
 
 overflow:hidden;}
 
@@ -176,9 +188,9 @@ padding-left:15vw;
   }
 }
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-device-width: 1800px) {
 	
-	.topNavigation{
+	body{
 	opacity:0;;
 	transition: 1s}
 
@@ -331,6 +343,17 @@ z-index:1000}
 	transition-delay:0.5s;
 	z-index:1001;}
 
+#📖📖📖📖📖📖📖📖{
+	float:right;
+	font-weight:500;
+	font-size:1vw;
+	width:35vw;
+	margin-right:5vw;
+	padding-top:25vh;
+	font-family:'Song Myung', serif;
+
+	transition-delay:0.5s;
+	z-index:1001;}
 
 
 

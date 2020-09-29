@@ -4,19 +4,19 @@ for DART398
 Presented to M.Wright
 
 ---
-this book is about a lot of things and perhaps a bit all over the place. It ended up being about my childhood, about the places I've been, about books and stories. I thought this project was a good opportunity to hone my coding skills. I've always found writing code to be a mystical thing, something you see computer "nerds" in movies do.<br>
+this book is about a lot of things and perhaps a bit all over the place. It ended up being about my childhood, about the places I've been, about books and stories. Maybe it's too cheesy in a way. I thought this project was a good opportunity to hone my coding skills. I've always found writing code to be a mystical thing, something you see computer "nerds" in movies do.<br>
 
 ----
-I didn't know until recently that you could use emojis in both the code and the URL. I like it. 
+I didn't know until recently that you could use emojis in both the code and the URL. I like it.  
 -->
 
 	<!--you have to call the functions in the html-->
 
 <html 
-	  onscroll="fadeOnScroll()" 
-	  onmousemove="registerCoords(event)" 
+	  onscroll="fadeOnScroll()"  onmousemove="registerCoords(event)" 
 	  onmouseenter="startFollowingCursor()" 
-	  onmouseleave="stopFollowingCursor()">
+	  onmouseleave="stopFollowingCursor()"
+	  >
 	
 <head> 
 <meta charset="utf-8">
@@ -109,7 +109,7 @@ I didn't know until recently that you could use emojis in both the code and the 
 		</section>
 		<!---->
 		<section class="section">
-			<div class="mainContainer🦐s" onmousemove="fadeInOnScroll5()">
+			<div class="mainContainer🦐s" onmousemove="fadeInOnScroll5()" >
 				<video autoplay muted loop  preload="auto" id="backgroundVideo">
   		<source src="assets/images/shrimps.mp4" type="video/mp4">
 		</video>
@@ -121,7 +121,15 @@ I didn't know until recently that you could use emojis in both the code and the 
 
 			</div>
 		</section>
-		
+		<section class="section">
+			<div class="lastContainer">
+			
+			<img class="groceries unselectable" src="assets/images/groceries.jpg" alt="the beach at Verdun">
+			<p id= "📖📖📖📖📖📖📖📖">
+				I went outside to buy some groceries last Monday. There aren’t a lot of groceries left in the house. There are lines in front of every grocery store and pharmacy. It was pretty surreal. I bought a bag of frozen shrimp (actually Dendrobranchiata prawns) which will last me a while. People were definitely more aware of each other and being careful of being too close. They were kind of jumpy. It was really awkward at the checkout, because I let out a little nervous cough and the cashier really looked at me weird. 
+			</p>
+				</div>
+		</section>
 	</div>
 			<!--these scripts need to be called after the rest of the content, because they make reference to the content.-->
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
