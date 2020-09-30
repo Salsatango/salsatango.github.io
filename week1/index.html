@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<!--First week's exercice in DART 449-->
+<head>
+	<meta charset="utf-8">
+	<title>exercise week 1</title>
+	<meta name="viewport" content="device-width, initial-scale=1.0">
+	<link rel=stylesheet href="css/main.css">
+	<link rel=stylesheet href="css/styles.css">
+	<link rel="icon" href="images/icon.svg">
+										 
+														   
+</head>
+
+<body>
+	<div id="logo">
+	<!--Try to use a SVG for the logo, it scales really well.-->
+    <img src="images/logo.svg" alt="A logo for week 1's exercice"/> 
+	</div>
+	
+	
+	<!--Navigation bar goes here. Use <nav> instead of a table or something else so screen readers can interpret the links as a menu. Put the individual items as a bunch of links
+	<a href="/file/">example text</a> 
+	Alternatively, use a bunch of # to link to sections of the page-->
+	
+	<nav id="navigation" class="overlay">
+	</nav>
+	
+	<!--Sections convey a thematic grouping, while divs don't have any specific meaning
+	<section>
+	</section> 
+	-->
+	
+	<header class="hero">
+		
+		<!--You don't need to give this hgroup a class or id. You can just specify .hero hgroup{}
+		hgroups groups headlines, titles and subtitles. 
+		-->
+		<hgroup>
+			<h1>Exercise Week 1 Sample Title</h1>
+			<h2>Sample subtitle</h2>
+		</hgroup>
+	</header>
+	
+	<section class="multiArt">
+		
+		<!--<article> tag specifies independent, self-contained content.
+		An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+		-->
+		<article class= "multi">
+			<h2>Article Title</h2>
+			<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+		</article>
+	</section> 
+	
+	<!--Use a <figure> element to mark up a photo in a document, and a <figcaption> element to define a caption for the photo:
+
+	<figure>
+  		<img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+  		<figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+	</figure>
+
+	-->
+	<section class="figures">
+		<figure>
+			<img src="images/figure 1-01.jpg">
+			<figcaption> *This is figcaption 1, it goes with figure 1 </figcaption>
+		</figure>
+		<figure>
+			<img src="images/figure 2-01.jpg">
+			<figcaption> *This is figcaption 2, it goes with figure 2 </figcaption>
+		</figure>
+		<figure>
+			<img src="images/figure 3-01.jpg">
+			<figcaption> *This is figcaption 3, it goes with figure 3 </figcaption>
+		</figure>
+
+	</section>
+	<footer>
+		<p>here is a sample footer.</p>
+	</footer>
+	
+</body>
+</html>

@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@800&display=swap');*/
+/*I tried to use the font "Epilogue," but it only loaded in Firefox and not Chrome or Edge, and I don't know why.*/
+
+section.poster{
+	display:grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(20, 1fr);
+	width:100vw;
+	height:145vw;
+	grid-gap:0.5vmin;
+	padding:4vmin;
+	padding-bottom:0 !important;
+	background-image: url("images/texture.png");
+	background-size:cover;
+}
+
+div{
+	font-family: 'Arial', sans-serif;
+	overflow:hidden;
+	color:#DEDBC7;
+	mix-blend-mode: difference;
+
+}
+
+
+p{	
+	position:relative;
+	left:-8vw;}
+
+.number1{
+	font-size:100vw;
+	font-weight:700;
+	line-height:0.778;
+}
+
+.number2{
+	font-size:110vw;
+	font-weight:700;
+	line-height:0.75;}
+
+/*The text scales fine on Chrome and Edge, but on Firefox, something happens at a viewport width of 1300px, and the font-size seems to stop getting bigger. */
+
+
+
+section.poster  div:nth-child(1){
+	grid-column: 1/4;
+    grid-row: 1/5;
+	font-size:9vw;
+	font-weight:550;
+	line-height:90%;
+}
+section.poster  div:nth-child(2) {
+	grid-column: 1/7;
+    grid-row: 5/6;
+	font-size:2vw;
+	font-weight:650;
+	letter-spacing:0.15vw;
+	line-height:95%;
+}
+section.poster  div:nth-child(3){
+	grid-column: 1/4;
+    grid-row: 6/7;
+}
+
+section.poster  div:nth-child(4){
+	grid-column: 4/9;
+    grid-row: 6/7;
+}
+
+
+section.poster  div:nth-child(5){
+	grid-column: 1/4;
+    grid-row: 7/9;
+}
+
+section.poster  div:nth-child(6){
+	grid-column: 4/9;
+    grid-row: 7/9;
+}
+
+section.poster  div:nth-child(7){
+	grid-column: 1/4;
+    grid-row: 9/12;
+}
+
+section.poster  div:nth-child(8){
+	grid-column: 4/9;
+    grid-row: 9/12;
+}
+
+section.poster  div:nth-child(9){
+	grid-column: 1/4;
+    grid-row: 12/16;
+}
+
+section.poster  div:nth-child(10){
+	grid-column: 4/9;
+    grid-row: 12/16;
+}
+
+section.poster  div:nth-child(11){
+	grid-column: 1/4;
+    grid-row: 16/21;
+}
+
+section.poster  div:nth-child(12){
+	grid-column: 4/9;
+    grid-row: 16/21;
+}
+
+
+
+
+

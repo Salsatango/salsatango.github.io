@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville&family=Merriweather:wght@700&display=swap');
+
+* {
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+	}
+
+body{background-color:red;
+  	animation-name: backgroundAnimation;
+ 	animation-duration: 10s;
+	animation-iteration-count: infinite;}
+
+::selection{ color:#FFFFFF;
+		background-color:#2D2D2D;}
+
+::-webkit-scrollbar{width:25px;
+	background:#000000;
+}
+::-webkit-scrollbar-thumb{width:5px;
+	background:#FF0004;
+}
+
+
+a:link {
+  color:#000000;
+}
+
+/* visited link */
+a:visited {
+  color:#000000;
+}
+
+/* mouse over link */
+a:hover {
+  color:#FFFFFF;
+	background-color:black;
+}
+
+/* selected link */
+a:active {
+  color:#37E611;
+}
+.nav {position:fixed;
+	padding:5vw;
+	right:0;}
+
+.nav a{text-decoration:none;
+	font-family:"bebas neue";
+	font-size:1.2em;
+	margin-left:0.5vw;
+	mix-blend-mode:multiply;
+	line-height:0.95;}
+
+
+header{position:absolute;
+	padding-left:5vw;
+	padding-top:5vw;
+	font-family:"bebas neue";
+	font-size:90%;
+	letter-spacing:1px;
+	line-height:0.95;}
+
+header h1{
+	font-size:1.5em;
+}
+
+.hero{
+	
+	min-height:100vh;
+	Width:100vw;
+	padding:5vw;
+	padding-top:20vmax !important;
+}
+
+.hero p{ font-size:3vmax;
+	font-family:"libre baskerville";
+	font-weight:700;
+	line-height:1.7;
+	width:85%;}
+
+
+section.mainBody {
+	display:grid;
+	min-height: 100vmax;
+	max-width:100vw;
+	grid-template-columns:repeat(13, 1fr);
+	padding:5vw;
+	overflow:hidden;
+	grid-row-gap:0vh;
+	poaition:relative;
+}
+
+.mainBody h1{font-family:"bebas neue";
+			font-size:500%;
+			margin-bottom:5vmin;
+			grid-column: 1/14;
+			letter-spacing:0px;
+			padding-top:8vmin;
+			padding-bottom:4vmin;}
+
+.mainBody a{grid-column:1/14;
+			text-decoration:none;
+			font-family:"libre baskerville";
+			font-size:2em;
+			font-weight:500;
+			margin:0.5vw;
+			mix-blend-mode:multiply;
+}
+
+figure{width:100%;
+		padding:0;
+	
+}
+
+iframe{
+		width:100%;
+		height:95%;
+		border: 5px solid black;
+		opacity:95%;
+		
+}
+
+figcaption{min-height:2vmin;
+		font-family:"bebas neue";
+		font-size:1em;
+		padding-bottom:5px;
+}
+
+/*Animate the background*/
+
+@keyframes backgroundAnimation {
+  0%   {background-color:#C12B2D;}
+  25%  {background-color:#26D86E;}
+  50%  {background-color:#541CD1;}
+  75%  {background-color:#E6C318;}
+  100% {background-color:#C12B2D;}
+}
+
+
+/*Grid items*/
+
+.exercice1{
+	grid-column: 1/14;
+	height:100vmin;
+
+}
+
+.exercice2{
+	grid-column: 1/14;
+	height:125vmin;
+}
+
+.project1{
+	grid-column: 1/14;
+	height:125vmin;
+}
+
+/*tablets*/
+
+@media only screen and (min-width: 450px) {
+	
+	
+	
+	.nav a{
+		font-size:1.5em;
+		margin:0.5vw;
+
+}
+	
+	
+	section.mainBody {
+		grid-row-gap:0vh;
+}
+	
+	.mainBody h1{
+		font-size:500%;
+		margin-bottom:0vmin;
+		letter-spacing:0px;}
+	
+}
+	figure{
+		padding-bottom:5vh;
+	
+}
+	
+	
+	
+	
+	
+	
+	
+

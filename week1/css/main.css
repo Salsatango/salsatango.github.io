@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+/*This is a "CSS reset", it removes any preset CSS different browsers put on websites.
+Use the asterisk as the universal selector*/
+
+*{	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+/*Makes it so margins and padding don’t enlarge the object. */
+
+/* ::selection indicates all selected text in the document 
+::-moz-selection is for Mozilla*/
+
+::selection {
+	background:#FFFFFF;
+	color:#262626;
+	text-shadow:none;
+}
+
+::-moz-selection {
+	background:#1BE69B;
+	color:#262626;
+	text-shadow:none;
+}
+
+@media print{
+	*,
+	*::before,
+	*::after,
+	*::first-letter,
+	*::first-line {
+	Background:transparent !important;
+	color:black !important;
+	box-shadow:none !important;
+	text-shadow: none !important!;
+		
+	}
+	
+}
+
+/*@media print changes the page css when it is printed out on paper
+
+::before and ::after pseudo-selectors: puts something before or after an element. Example:
+
+	p::after {
+  		content: " - Remember this";
+	}
+
+-----------------
+
+This will display: "The WHO was founded in 1948. " with "World Health Organization appearing when hovered on. "
+
+	The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+
+
+*/
+
+
+
+
