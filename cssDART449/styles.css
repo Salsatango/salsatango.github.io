@@ -8,10 +8,13 @@
 		box-sizing:border-box;
 	}
 
+
 body{background-color:red;
   	animation-name: backgroundAnimation;
- 	animation-duration: 10s;
-	animation-iteration-count: infinite;}
+ 	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	scrollbar-color:#000000 #FF0004;
+}
 
 ::selection{ color:#FFFFFF;
 		background-color:#2D2D2D;}
@@ -22,6 +25,9 @@ body{background-color:red;
 ::-webkit-scrollbar-thumb{width:5px;
 	background:#FF0004;
 }
+
+/*for Firefox*/
+
 
 
 a:link {
@@ -43,16 +49,43 @@ a:hover {
 a:active {
   color:#37E611;
 }
+
+
+
+#trigger{padding:5vw;
+		position:fixed;
+		right:0;
+		z-index:12;}
+
+
+
 .nav {position:fixed;
 	padding:5vw;
-	right:0;}
+	right:0;
+	width:0;
+	opacity:0;
+	height:40vh;
+	background-color:red;
+	display:flex;
+	flex-wrap: wrap;
+	overflow:hidden;
+	z-index:11;
+	border:3px black;
+	animation-name: backgroundAnimation;
+ 	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	transition:0.3s;
+}
 
-.nav a{text-decoration:none;
+.nav a{
+	text-decoration:none;
 	font-family:"bebas neue";
-	font-size:1.2em;
+	font-size:4em;
 	margin-left:0.5vw;
 	mix-blend-mode:multiply;
-	line-height:0.95;}
+	line-height:0.95;
+	flex:1 100%;
+	}
 
 
 header{position:absolute;
@@ -73,13 +106,15 @@ header h1{
 	Width:100vw;
 	padding:5vw;
 	padding-top:20vmax !important;
+	transition:0.3s;
 }
 
 .hero p{ font-size:3vmax;
 	font-family:"libre baskerville";
 	font-weight:700;
 	line-height:1.7;
-	width:85%;}
+	width:85%;
+}
 
 
 section.mainBody {
@@ -90,34 +125,36 @@ section.mainBody {
 	padding:5vw;
 	overflow:hidden;
 	grid-row-gap:0vh;
-	poaition:relative;
+	transition:0.3s;
 }
 
 .mainBody h1{font-family:"bebas neue";
-			font-size:500%;
+			font-size:10vw;
 			margin-bottom:5vmin;
 			grid-column: 1/14;
 			letter-spacing:0px;
 			padding-top:8vmin;
-			padding-bottom:4vmin;}
+			padding-bottom:4vmin;
+			border-top:3px solid black;
+}
 
 .mainBody a{grid-column:1/14;
 			text-decoration:none;
 			font-family:"libre baskerville";
-			font-size:2em;
+			font-size:1.5em;
 			font-weight:500;
 			margin:0.5vw;
 			mix-blend-mode:multiply;
+			padding-bottom:5vmin;
 }
 
 figure{width:100%;
 		padding:0;
-	
 }
 
 iframe{
 		width:100%;
-		height:95%;
+		height:90%;
 		border: 5px solid black;
 		opacity:95%;
 		
@@ -127,7 +164,15 @@ figcaption{min-height:2vmin;
 		font-family:"bebas neue";
 		font-size:1em;
 		padding-bottom:5px;
+		padding-top:5px;
 }
+
+
+/*utility function*/
+.uncollapsed{width:80vw;
+			opacity:100%;}
+
+.collapsed{opacity:0;}
 
 /*Animate the background*/
 
@@ -162,32 +207,155 @@ figcaption{min-height:2vmin;
 
 @media only screen and (min-width: 450px) {
 	
-	
-	
-	.nav a{
-		font-size:1.5em;
-		margin:0.5vw;
+
+		.nav {position:fixed;
+			padding:5vw;
+			right:0;
+			width:0;
+			opacity:0;
+			height:40vh;
+			background-color:red;
+			display:flex;
+			flex-wrap: wrap;
+			overflow:hidden;
+			z-index:11;
+			border:3px black;
+
+		}
+
+
+		.nav a{
+			text-decoration:none;
+			font-family:"bebas neue";
+			font-size:3em;
+			margin-left:0.5vw;
+			mix-blend-mode:multiply;
+			line-height:0.95;
+			flex:1 100%;
+			}
+
+
+
+		.mainBody h1{
+			margin-bottom:0vmin;
+			letter-spacing:0px;}
+
+		.uncollapsed{
+			width:40vw;
+			opacity:100%;}
+
+		figure{
+			padding-bottom:5vh;
+
 
 }
-	
-	
-	section.mainBody {
-		grid-row-gap:0vh;
 }
+
+
+
 	
-	.mainBody h1{
-		font-size:500%;
-		margin-bottom:0vmin;
-		letter-spacing:0px;}
-	
-}
-	figure{
-		padding-bottom:5vh;
-	
-}
-	
-	
-	
+/*Desktop and laptops*/
+@media only screen and (min-width: 750px) {
+			#trigger{
+				opacity:0;
+				z-index:1;}
+
+
+			.nav {position:fixed;
+				padding:5vw;
+				right:0;
+				width:50%;
+				opacity:100;
+				height:40vh;
+				background-color:transparent!important;
+				display:block;
+				text-align:right;
+				flex-wrap: wrap;
+				overflow:hidden;
+				z-index:11;
+				border:3px black;
+
+		}
+
+
+
+			.nav a{
+				text-decoration:none;
+				font-family:"bebas neue";
+				font-size:1.5em;
+				margin-left:0.5vw;
+				mix-blend-mode:multiply;
+				line-height:0.95;
+				flex:1 100%;
+				}
+
+
+			.exercice1{
+				grid-column: 5/14;
+				height:100vmin;
+
+				}
+
+			.exercice2{
+				grid-column: 5/14;
+				height:100vmin;
+			}
+
+			.project1{
+				grid-column: 5/14;
+				height:100vmin;
+			}
+
+
+			.mainBody h1{
+				font-family:"bebas neue";
+				font-size:6vw;
+				margin-bottom:5vmin;
+				grid-column: 1/5;
+				letter-spacing:0px;
+				padding-top:5vmin;
+				padding-bottom:4vmin;
+				border-top:3px solid black;
+			}
+
+			.mainBody a{
+				grid-column:1/14;
+				text-decoration:none;
+				font-family:"libre baskerville";
+				font-size:1.5em;
+				font-weight:500;
+				margin:0vw;
+				mix-blend-mode:multiply;
+				padding-bottom:0vmin;
+			}
+
+			#readings {
+				grid-column:1/14;
+			}
+
+
+			section.mainBody {
+				grid-row-gap:5vh;
+
+		}
+
+			figure{width:100%;
+				padding:0;
+				padding-top:5vmin;
+				border-top:3px solid black;
+				
+
+		}
+			figcaption{
+				min-height:3vmin;
+				font-family:"bebas neue";
+				font-size:2em;
+				padding-bottom:10px;
+				padding-top:10px;
+		}
+
+		}
+
 	
 	
 	

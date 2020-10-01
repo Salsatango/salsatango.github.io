@@ -8,25 +8,28 @@
 </head>
 
 <body>
+	
 	<header>
 		<div>
 			<h1>Baoshi Hong/ <br> DART449</h1>
 		</div>
 	</header>
-	
+
+	<span id="trigger">☰</span>
 	<nav class="nav">
-		<a href="#" class="one"><span>Exercices</span></a>
-		<a href="#" class="two"><span>Readings</span></a>
-		<a href="#" class="three"><span>Projects</span></a>
+		<a href="#exercises" ><span>Exercices</span></a>
+		<a href="#readings" ><span>Readings</span></a>
+		<a href="#projects" ><span>Projects</span></a>
 	</nav>
 	
 	<div class="hero">
 		<p>This is a website made by Baoshi Hong for "DART 449:The Language of the Web," taken at Concordia University in the Fall semester of 2020, taught by Santo Romano. It's mostly a web design class. </p>
+		 
 	</div>
 	
 	<section class = "mainBody">
 	
-	<h1>Exercises</h1>
+	<h1 id="exercises">Exercises</h1>
 
 		<figure class="exercice1">
 		<figcaption> Exercise for week 1: Flex Boxes.</figcaption>
@@ -39,22 +42,48 @@
 		  <iframe src="week2/exerciseWeek2.html" title="Exercise for week 2"></iframe>
 		 
 		</figure>
-
-	<h1>readings</h1>
+		
+<!-- I regret not organizing this better. I think instead of using fugures, I should use articles or somthing like that. That way, the "Readings" sections wouldn't have different tags. -->
+		
+	<h1 id="readings">readings</h1>
 		<a href="https://arstechnica.com/tech-policy/2011/02/how-the-atom-bomb-gave-birth-to-the-internet/">How the atom bomb helped give birth to the Internet - Johnny Ryan, February 2011</a>
 		<a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">As We May Think - Vannevar Bush. July 1945</a>
 		<a href="http://santoromano.com/readings/internethistory.pdf">Wizards, Bureaucrats, Warriors, and Hackers: Writing the History of the internet - Roy Rosenzweig, 1998</a>
 
-	<h1>projects</h1>
+	<h1 id="projects">projects</h1>
 		
 			
 		<figure class="project1">
-		<figcaption> First project: this website</figcaption>
+		<figcaption> First project: this website. Pretty meta huh</figcaption>
 		  <iframe src="DART449.html" title="First project: this website"></iframe>
 		  
 		</figure>
 
 	</section>
 
+	
+	<script>
+		const trig = document.querySelector('#trigger');
+		var nav = document.querySelector(".nav");
+		var notNav = document.querySelector(".hero,.mainBody");
+		
+		trig.addEventListener('click',openNav);
+				
+		function openNav() {
+			nav.classList.add("uncollapsed");
+			trig.classList.add("collapsed");
+		}
+		
+		notNav.addEventListener('click',closeNav);
+		
+		function closeNav() {
+			nav.classList.remove("uncollapsed");
+			trig.classList.remove("collapsed");
+		}
+		
+		
+	</script>
 </body>
 </html>
+
+
