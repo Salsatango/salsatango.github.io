@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+* {
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+::selection{ background-color:#D57B7B;
+color:white;}
+
+.overlay{position:fixed;
+	display:flex;
+	width:100vw;
+	height:100vh;
+	justify-content:center;
+	align-items: center;
+	text-align:center;
+	font-family:"Amatic SC";
+	color:#C77374;
+	font-size:3vw;
+	z-index:10;}
+
+.child{height:20vh;}
+
+.Canvas{
+	width:100vmax;
+	height:100vmax;
+	display:grid;
+	grid-template-columns:repeat(24, 1fr);
+	grid-template-rows:repeat(24, 1fr);
+	background-color:#FFFEF7;
+	transition: 1s;
+}
+
+/*
+section.Canvas  div:nth-child(1){
+background-color:;
+}
+*/
+.Canvas div{transition: 0.3s;}
+
+.red{
+	background-color:red;
+	opacity:95%;}
+
+.white{
+	background-color:#F3FDFF;
+	opacity:95%;}
+.white2{
+	background-color:#FFFFFF;
+	opacity:95%;}
+.tan{
+	background-color:#FFF0E1;
+	opacity:95%;}
+
+.sand{
+	background-color:#FFFCF1;
+	opacity:95%;}
+.sky{
+	background-color:#b2d9ea;
+	opacity:95%;}
+.sky2{
+	background-color:#CFE8F2;
+	opacity:95%;}
+.sky3{
+	background-color:#A1D0DD;
+	opacity:95%;}
+.sky4{
+	background-color:#DAEAEA;
+	opacity:95%;}
+.sky5{
+	background-color:#8AD3DE;
+	opacity:95%;}
+.sky6{
+	background-color:#AFD9F7;
+	opacity:95%;}
+.sky7{
+	background-color:#A3E1E0;
+	opacity:95%;}
+.sky8{
+	background-color:#E4F5F6;
+	opacity:95%;}
+.ocean{
+	background-color:#B6D4E9;
+	opacity:95%;}
+.sunlight{
+	background-color:#FFFBE5;
+	opacity:95%;}
