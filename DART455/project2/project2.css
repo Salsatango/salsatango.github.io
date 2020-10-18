@@ -10,7 +10,7 @@
 
 span{ color:#00FFD6!important;}
 
-img{width:7vw;}
+img{width:9vmax;}
 
 ::selection{
 	color:#34B2C1;
@@ -212,27 +212,27 @@ img{width:7vw;}
 	grid-column: 4/5;
     grid-row: 4/5;
 	transition:1s;
-	padding:3px;}
+	padding:5px;}
 .secondTimer{
 	grid-column: 4/5;
     grid-row: 5/6;
 	transition:1s;
-	padding:3px;}
+	padding:5px;}
 .thirdTimer{
 	grid-column: 4/5;
     grid-row: 6/7;
 	transition:1s;
-	padding:3px;}
+	padding:5px;}
 .fourthTimer{
 	grid-column: 4/5;
     grid-row: 7/8;
 	transition:1s;
-	padding:3px;}
+	padding:5px;}
 .fifthTimer{
 	grid-column: 4/5;
     grid-row: 8/9;
 	transition:1s;
-	padding:3px;}
+	padding:5px;}
 
 .prompt{z-index:1;}
 
