@@ -70,6 +70,7 @@ img{width:7vw;}
 	width:100vw;
 	height:100vh;
 	display:grid;
+	grid-gap:10px;
 	grid-template-columns:repeat(6, 1fr);
 	grid-template-rows:repeat(12, 1fr);
 	mix-blend-mode:color-burn;
@@ -140,28 +141,28 @@ img{width:7vw;}
 	transition:1s;}
 
 .first{
-	grid-column: 1/6;
+	grid-column: 1/4;
     grid-row: 4/5;
 	transition:3s;
 }
 .second{
-	grid-column: 1/6;
+	grid-column: 1/4;
     grid-row: 5/6;
 	transition:3s;
 }
 .third{
-	grid-column: 1/6;
+	grid-column: 1/4;
     grid-row: 6/7;
 	transition:3s;
 }
 .fourth{
-	grid-column: 1/6;
+	grid-column: 1/4;
     grid-row: 7/8;
 	transition:3s;
 }
 .fifth{
-	grid-column: 1/6;
-    grid-row: 8/9;
+	grid-column: 1/4;
+    grid-row: 8/10;
 	transition:3s;
 }
 
