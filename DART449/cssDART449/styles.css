@@ -124,7 +124,6 @@ section.mainBody {
 	max-width:100vw;
 	grid-template-columns:repeat(13, 1fr);
 	padding:5vw;
-
 	grid-row-gap:0vh;
 	transition:0.3s;
 }
@@ -139,7 +138,7 @@ section.mainBody {
 			border-top:3px solid black;
 }
 .readings{grid-column:1/14;
-		grid-row:4/6;}
+		grid-row:6/8;}
 
 .readings a{display:block;
 			text-decoration:none;
