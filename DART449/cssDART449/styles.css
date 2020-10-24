@@ -315,6 +315,11 @@ figcaption{min-height:2vmin;
 			grid-column: 5/14;
 			height:100vmin;
 }
+	
+			.exercice5{
+			grid-column: 5/14;
+			height:125vmin;
+}
 			.project1{
 				grid-column: 5/14;
 				height:100vmin;
