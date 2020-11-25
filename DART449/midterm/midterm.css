@@ -146,6 +146,9 @@ position:relative;}
 	margin-top:30px;
 	margin-bottom:70px}
 
+.essay{width:100vw;
+height:100vh;}
+
 /*utility classes*/
 
 .hidden{opacity:0;}
