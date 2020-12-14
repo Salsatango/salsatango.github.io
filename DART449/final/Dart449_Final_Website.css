@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Oswald:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+	box-sizing:border-box;
+}
+
+.everythingContainer{
+	display:flex;
+	justify-content: center;
+	
+}
+.preamble{
+	width:100%;
+	position:fixed;
+	z-Index:1000;
+}
+
+.intro{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	background-color:#FBFBFB;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition:1s;
+	overflow:hidden;
+	z-Index:1000;
+}
+
+/*navigation*/
+.navContainer{	
+	grid-column: 21/25;
+    grid-row: 1/2;
+	display:flex;
+	flex-wrap: wrap;
+	overflow:hidden;
+	z-index:11;
+	border:3px black;
+	transition:0.3s;}
+
+.nav a{
+	text-decoration:none;
+	margin-left:1.5vw;
+	mix-blend-mode:multiply;
+	line-height:0.95;
+	font-family:"Oswald";
+	font-size:1.5em;
+	font-weight:500;
+	color:#090909;
+}
+
+/*scroll indicator*/
+.scrollIndicator{
+	position:fixed;
+	top:25vh;
+	left:35px;
+	width:3px;
+	border-radius: 1px;
+	background-color:#BDBDBD;
+	height:50vh;
+}
+.progressBar{
+	width:100%;
+	background-color:#040404;
+}
+/*scroll bar*/
+
+::-webkit-scrollbar {
+	width: 6px;
+
+}
+::-webkit-scrollbar-track {
+	background:#BDBDBD;
+}
+::-webkit-scrollbar-thumb {
+	background: #040404;
+}
+
+
+/*main grid*/
+.main{
+	margin:20px;
+	margin-top:35px;
+	display:grid;
+	grid-template-columns:repeat(24, 1fr);
+	grid-template-rows:repeat(24, 1fr);
+	grid-gap: 20px;
+	width:100%;
+	min-height:100vh;
+	overflow:hidden;
+}
+
+
+.logo{
+	position:relative;
+	width:45px;
+
+}
+/* utility classes*/
+
+.collapsed{
+	height:0!important;
+}
+
+.flownAway{
+	top:-300px!important;
+}
