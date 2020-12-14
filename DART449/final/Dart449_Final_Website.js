@@ -3,13 +3,21 @@
 // here is the code for the intro of the website
 
 let intro = document.querySelector(".intro");
+let intro2= document.querySelector(".intro2");
 let ui =document.querySelectorAll(".ui");
 window.addEventListener('click', introAnimation);
+intro2.addEventListener('click', introAnimation2);
 
 function introAnimation(){
 	collapse(intro);
 	flyaway(intro);
-	setTimeout (uiAppear,2000);
+
+}
+
+function introAnimation2(){
+	collapse(intro2);
+	flyaway(intro2);
+	setTimeout (uiAppear,1500);
 }
 
 function uiAppear(){
@@ -29,6 +37,10 @@ function collapse(element){
 function flyaway(element){
 	element.classList.add("flownAway");
 }
+
+
+
+
 
 //AutoScroll
 window.onscroll = function() {scroll()};
