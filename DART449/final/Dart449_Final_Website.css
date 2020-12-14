@@ -86,7 +86,8 @@ font-size:110%;}
 }
 
 .heroMessage h1{ 
-	font-size:1000%;
+	font-size: minmax(10vh, auto);
+	line-height:98%;
 	
 }
 .ui{transition:1s;}
