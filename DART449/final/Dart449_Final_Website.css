@@ -54,7 +54,7 @@
 
 .preamble p{ width:35%;
 font-family:"Castoro";
-font-size:1.3em;}
+font-size:110%;}
 
 
 
@@ -75,11 +75,20 @@ font-size:1.3em;}
 	mix-blend-mode:multiply;
 	line-height:0.95;
 	font-family:"Oswald";
-	font-size:1em;
+	font-size:110%;
 	font-weight:500;
 	color:#090909;
 }
 
+.heroMessage{
+	grid-column:6/20;
+    grid-row: 3/12;
+}
+
+.heroMessage h1{ 
+	font-size:1000%;
+	
+}
 .ui{transition:1s;}
 
 
@@ -117,12 +126,15 @@ font-size:1.3em;}
 	margin-top:35px;
 	display:grid;
 	grid-template-columns:repeat(24, 1fr);
-	grid-template-rows:repeat(24, 1fr);
+	grid-template-rows:repeat(48, 1fr);
 	grid-gap: 20px;
 	width:100%;
 	min-height:100vh;
+	height:400vh;
 	overflow:hidden;
 }
+
+.main div{overflow:hidden;}
 
 
 .logo{
