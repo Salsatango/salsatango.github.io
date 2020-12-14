@@ -3,7 +3,7 @@
 //element that follows cursor
 window.addEventListener('mousemove', registerCoords);
 window.addEventListener('load', createObserver1);
-window.onscroll = function() {indicateScroll()};
+
 
 
 function registerCoords(event) {
@@ -84,8 +84,7 @@ appearObserver = new IntersectionObserver(appearTrigger, options);
 
 
 //AutoScroll
-window.onscroll = function() {scroll()};
-
+window.onscroll = function() {scroll();indicateScroll(); }
 
 let scrollSection = document.querySelectorAll(".scrollable");
 //I want to preface this by saying I've not done any math in a long time, and this could probably have been done in an easier way.
@@ -117,7 +116,7 @@ scrollSection.forEach(function scroll1(element) {
 	console.log("f" + " " + f);
 	//f is one thousandth of the scrolable Width
 	console.log( " " );
-	element.scrollLeft = (e*f);
+	element.scrollLeft = (e*f)/1.8 -600;
 
 })}
 
@@ -134,8 +133,6 @@ function indicateScroll(){
 	let thousandth = scrollBarHeight/1000;
 	scrollBar.style.height = (scrolled*thousandth) + "px";
 }
-
-
 
 
 
