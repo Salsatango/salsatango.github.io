@@ -38,7 +38,7 @@
 
 /*navigation*/
 .navContainer{	
-	grid-column: 21/25;
+	grid-column: 22/25;
     grid-row: 1/2;
 	display:flex;
 	flex-wrap: wrap;
@@ -53,10 +53,13 @@
 	mix-blend-mode:multiply;
 	line-height:0.95;
 	font-family:"Oswald";
-	font-size:1.5em;
+	font-size:1em;
 	font-weight:500;
 	color:#090909;
 }
+
+.ui{transition:1s;}
+
 
 /*scroll indicator*/
 .scrollIndicator{
@@ -113,4 +116,8 @@
 
 .flownAway{
 	top:-300px!important;
+}
+
+.hidden{
+	opacity:0!important;
 }

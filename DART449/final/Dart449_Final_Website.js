@@ -3,14 +3,24 @@
 // here is the code for the intro of the website
 
 let intro = document.querySelector(".intro");
-
+let ui =document.querySelectorAll(".ui");
 window.addEventListener('click', introAnimation);
 
 function introAnimation(){
 	collapse(intro);
 	flyaway(intro);
+	setTimeout (uiAppear,2000);
 }
 
+function uiAppear(){
+	ui.forEach (function appearance(element){
+	appear(element);
+	})
+}
+
+function appear(element){
+	element.classList.remove("hidden");
+}
 
 function collapse(element){
 	element.classList.add("collapsed");
