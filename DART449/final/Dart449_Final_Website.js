@@ -1,5 +1,22 @@
 // JavaScript Document
 
+//element that follows cursor
+window.addEventListener('mousemove', registerCoords);
+window.addEventListener('load', createObserver1);
+window.onscroll = function() {indicateScroll()};
+
+
+function registerCoords(event) {
+  	var x = event.pageX;
+  	var y = event.pageY;
+
+	
+let cursorFollower = document.querySelector(".followCursor");
+  cursorFollower.style.left = (x+2) + "px";
+  cursorFollower.style.top = (y+2) + "px";
+}
+
+
 // here is the code for the intro of the website
 
 let intro = document.querySelector(".intro");
@@ -39,12 +56,36 @@ function flyaway(element){
 }
 
 
+//Observer1 is for detecting when a div appears on screen, for opacity transitions
+let observer;
 
+let appearOnScroll = document.querySelectorAll(".appearOnScroll");
+let autoScroll = document.querySelectorAll(".autoScroll");
+
+
+
+
+
+function createObserver1() {
+  let observer;
+
+  let options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.4
+  };
+
+appearObserver = new IntersectionObserver(appearTrigger, options);
+
+	appearOnScroll.forEach(entry => {
+ appearObserver.observe(entry);	
+})
+}
 
 
 //AutoScroll
 window.onscroll = function() {scroll()};
-window.onscroll = function() {indicateScroll()};
+
 
 let scrollSection = document.querySelectorAll(".scrollable");
 //I want to preface this by saying I've not done any math in a long time, and this could probably have been done in an easier way.
@@ -82,7 +123,6 @@ scrollSection.forEach(function scroll1(element) {
 
 //scrollIndicator
 
-
 function indicateScroll(){
 	let scrollIndicator = document.querySelector(".scrollIndicator");
 	let scrollBar = document.querySelector(".progressBar");
@@ -92,9 +132,18 @@ function indicateScroll(){
 	let c = document.documentElement.clientHeight;
 	let scrolled = (a/(b-c)*1000);
 	let thousandth = scrollBarHeight/1000;
-	console.log(scrollBar);
 	scrollBar.style.height = (scrolled*thousandth) + "px";
 }
 
 
 
+
+
+				   
+function appearTrigger(entries, appearObserver){
+	entries.forEach(entry => {
+    if (entry.isIntersecting) {
+     entry.target.classList.remove("hidden");}
+		  else{entry.target.classList.add("hidden");}
+	})
+}
