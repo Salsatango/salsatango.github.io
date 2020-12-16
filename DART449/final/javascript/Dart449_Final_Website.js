@@ -3,6 +3,10 @@
 //rellax parallax scrolling
 var rellax = new Rellax('.rellax');
 
+//icon
+
+let icon=document.querySelector(".logo");
+icon.addEventListener('click',goToMain);
 
 
 
@@ -133,8 +137,10 @@ function indicateScroll(){
 function appearTrigger(entries, appearObserver){
 	entries.forEach(entry => {
     if (entry.isIntersecting) {
-     entry.target.classList.remove("hidden");}
-		  else{entry.target.classList.add("hidden");}
+     entry.target.classList.remove("hidden");
+	entry.target.classList.remove("unzoomed");}
+		  else{entry.target.classList.add("hidden");
+			  entry.target.classList.add("unzoomed");}
 	})
 }
 
@@ -254,7 +260,7 @@ function goToDonate(element) {
 }
 
 function goToMain(element) {
-	window.location.href = "Donate.html";
+	window.location.href = "Dart449_Final_Website_No_Intro.html";
 }
 
 

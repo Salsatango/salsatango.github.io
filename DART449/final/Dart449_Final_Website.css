@@ -165,7 +165,6 @@ html{overflow-x:hidden;}
 
 
 
-
 .everythingContainer{
 	display:flex;
 	justify-content: center;
@@ -279,7 +278,7 @@ html{overflow-x:hidden;}
 	position:fixed;
 	top:0;
 	mix-blend-mode:normal!important;
-	background-color: #D7E0E6;
+	background-color:#122643;
 	color:#EAEDF2;
 	display: flex;
 	justify-content: center;
@@ -718,3 +717,8 @@ label{
 .hidden{
 	opacity:0!important;
 }
+
+.unzoomed{
+	transform: scale(1.1)!important;
+}
+

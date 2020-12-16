@@ -58,6 +58,8 @@ banner1.addEventListener('mouseleave',function() {
 }
 );
 
+banner1.addEventListener('click', goToDonate);
+
 banner2.addEventListener('mouseover',function() {
 	console.log(mouseImage);
 	mouseImage.style.cssText = "background-image: url(images/shutterstockZoneFatal.jpg); width:50vw; height:75vh; transform:translateY(-20vh) translateX(-20vw);";
@@ -69,6 +71,9 @@ banner2.addEventListener('mouseleave',function() {
 	mouseImage.style.cssText = "background-image: url(images/net.svg); width:30vw; height:50vh; transform:translateY(0vh)  translateX(0px);";
 }
 );
+
+banner2.addEventListener('click', goToAuction);
+
 
 banner3.addEventListener('mouseover',function() {
 	console.log(mouseImage);
