@@ -1,5 +1,13 @@
 // JavaScript Document
 
+//rellax parallax scrolling
+var rellax = new Rellax('.rellax');
+
+
+
+
+
+
 //element that follows cursor
 window.addEventListener('mousemove', registerCoords);
 window.addEventListener('load', loadfunctions);
@@ -10,6 +18,8 @@ function loadfunctions(){
 	fishText();
 }
 
+
+
 function registerCoords(event) {
   	var x = event.pageX;
   	var y = event.pageY;
@@ -17,8 +27,8 @@ function registerCoords(event) {
 
 
 let cursorFollower = document.querySelector(".followCursor");
-  cursorFollower.style.left = (x+2) + "px";
-  cursorFollower.style.top = (y+2) + "px";
+  cursorFollower.style.left = (x+15) + "px";
+  cursorFollower.style.top = (y+15) + "px";
 }
 
 
@@ -47,6 +57,16 @@ appearObserver = new IntersectionObserver(appearTrigger, options);
 appearOnScroll.forEach(entry => {
  appearObserver.observe(entry);	
 })}
+
+
+
+
+
+
+
+
+
+
 
 
 //AutoScroll
@@ -88,6 +108,11 @@ scrollSection.forEach(function scroll1(element) {
 })}
 
 
+
+
+
+
+
 //scrollIndicator
 
 function indicateScroll(){
@@ -112,6 +137,17 @@ function appearTrigger(entries, appearObserver){
 		  else{entry.target.classList.add("hidden");}
 	})
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -140,6 +176,24 @@ amounts.forEach(item => {
 })
 
 
+
+
+
+// code for images that appear on hover
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
 //thank you page.
 
 let button = document.querySelector(".button");
@@ -154,6 +208,19 @@ function thankYouAnimation(){
 
 	setTimeout (goToAbout,4000);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //navigation functions
@@ -178,15 +245,29 @@ function goToAbout(element) {
 	window.location.href = "About.html";
 }
 
+function goToAuction(element) {
+	window.location.href = "Auction.html";
+}
+
+function goToDonate(element) {
+	window.location.href = "Donate.html";
+}
+
+function goToMain(element) {
+	window.location.href = "Donate.html";
+}
 
 
-// fish
-let fish = document.querySelectorAll(".vertical");
 
-function fishText(){
-	fish.forEach(item => {item.innerHTML = "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------🐟";
-	
-})}
+
+
+
+
+
+
+
+
+
 
 
 
