@@ -30,7 +30,7 @@ document.addEventListener('keypress', removeText);
 //I used a lot of console.logs to figure out why this function wasn't updating. It turns out that you need to empty and array and repopulate it each time. 
 function nextDiv(){
 x++;
-console.log(x);
+console.log(x); 
 divSelect=[] ; //resets the array
 console.log(divSelect);
 divSelect = document.querySelectorAll('.'+ CSS.escape( x ));
