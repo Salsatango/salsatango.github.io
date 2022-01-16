@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{	
+	cursor:crosshair;
+}
+body{margin:0;}
+
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.mainContainer{height:200vh;
+
+}
+
+
+.Name
+	{width:500px;
+	display:inline-block;
+	margin-right:0;
+  	font-size: 25px;
+	padding: 20px 20px;}
+
+.Header
+	{
+	margin-top:40px;
+	margin-right:50px;
+	margin-left:50px;
+	font-family:"Bebas Neue", cursive;}
+
+.topNavigation{
+	display:inline-block;
+	float:right;
+	transition: 1s;
+}
+
+.topNavigation a{
+	display:inline-block;
+	float:right;
+	color: #303030;
+	text-align: center;
+	padding: 20px 20px;
+  	font-size: 25px;
+	text-decoration:none;
+}
+
+.ml3{
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+  font-weight: 900;
+  font-size: 5em;
+}
+.circlesvg{
+	fill:none;
+	stroke:#231f20;
+	stroke-width:3;
+	stroke-alignment:inner;
+	stroke-miterlimit:10;
+	stroke-dasharray: 600;
+	stroke-dashoffset: 600;
+	animation: dash 3s linear;
+	animation-fill-mode: forwards;
+}
+
+.firstSectionContainer{
+
+}
+.mainParagraphContainer{
+	Margin-left:70px;
+	margin-top:150px;
+	width:80vw;
+}
+
+@keyframes dash {
+	  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+	
+	.topNavigation{
+	opacity:0;;
+	transition: 1s}
+
+}
+
+
+#followCursor
+	{position:absolute;
+	transition-property: opacity, top, left, width;
+	transition-delay: 0.2s, 0s ,0s ,0.3s;
+	transition-duration: 0.15s;
+    width:90px;
+    height:auto;
+	mix-blend-mode: multiply;
+	z-index:1000 ;
+	/*the Z-index determines the order of superposition*/
+}
+.section{width:100vw;
+	height:100vh;}
+
+
+.hide {
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+}
+
+.left{float:left;}
+
+.right{float:right;
+	text-align:right;
+
+}
+
+/*For DART398*/
+
+
+#fullScrollContainer{height:100vh;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* for the shrimp website*/
+#backgroundVideo{position:absolute;
+  min-width: 100%;
+ }
+
+
+.pageTitle{width:100px;
+		display:inline-block;
+	margin-right:0;
+  	font-size: 25px;
+	padding: 20px 20px;}
+.HeaderShrimp
+	{
+	position:absolute;
+	margin-top:0px;
+	margin-right:0px;
+	margin-left:0px;
+	font-family:"Bebas Neue", cursive;}
+
+.topNavigationShrimp{
+	display:inline-block;
+	float:right;
+	transition: 1s;
+}
+
+.mainContainerShrimps{
+maxwidth:100em;
+	overflow:hidden;
+}
+
+#followCursorShrimp
+	{position:absolute;
+	transition-property: opacity, top, left, width;
+	transition-delay: 0.2s, 0s ,0s ,0.3s;
+	transition-duration: 0.15s;
+    width:400px;
+    height:auto;
+	mix-blend-mode:color-burn;
+	z-index:1000 ;
+}
+
+.circlesvgShrimp{
+	fill:#0400ff;
+	stroke:#231f20;
+	stroke-width:0;
+	stroke-miterlimit:10;
+	stroke-dasharray: 600;
+	stroke-dashoffset: 600;
+	animation: dash 3s linear;
+	animation-fill-mode: forwards;
+	opacity:0.5;
+
+}
