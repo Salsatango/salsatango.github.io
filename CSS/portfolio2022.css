@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Castoro&family=Oswald:wght@300&display=swap');
+
+body{font-size:12px;}
+
+.heroText{
+	font-family:"Castoro";
+	font-size:6em;
+	line-height:1.1em;
+	width:60%;
+	max-width:1000px;
+	margin-left:5%;
+	margin-right:auto;
+}
+
+.entriesSection{
+	display:grid;
+	grid-template-columns:repeat(12, 1fr);
+	grid-template-rows:repeat(12, 1fr);
+	width:90%;
+	min-height:100vh;
+	margin-left:auto;
+	margin-right:auto;
+}
+.entry1{
+	grid-column:1/13;
+    grid-row: 1/2;}
+
+.entry2{
+	grid-column:1/13;
+    grid-row: 2/3;}
+
+.entry3{
+	grid-column:1/13;
+    grid-row: 3/4;}
+
+.entry4{
+	grid-column:1/13;
+    grid-row: 4/5;}
+
+.entry5{
+	grid-column:1/13;
+    grid-row: 5/6;}
+
+.entry6{
+	grid-column:1/13;
+    grid-row: 6/7;}
+
+.entry7{
+	grid-column:1/13;
+    grid-row: 7/8;}
+
