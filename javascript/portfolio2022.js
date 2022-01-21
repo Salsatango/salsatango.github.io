@@ -14,7 +14,7 @@ for (var y = 0; y < allSections.length;){
 // This is to load the JSON file
 
 async function getJSON() {
-    let url = 'https://jsonware.com/json/abfe005c41c8214e22e487b8d6eff417.json'
+    let url = 'https://salsatango.github.io/javascript/listOfEntries.JSON'
     let obj = await (await fetch(url)).json();
     
     //console.log(obj);
