@@ -1,4 +1,9 @@
-const entriesInfo = '{
-"bookshelf": {"title":"1", "age":"31", "city":"New York1"},
-"jacket": {"title":"2", "age":"32", "city":"New York2"}
-}'
+var entriesInfo = {"projects":{
+"bookshelf": {"title":"'Averell' Bookshelf", "date":"August 2021", "description":"bokshelf description"},
+"jacket": {"title":"'Not Down With Down' Jacket", "date":"November 2019", "description":"New York2"},
+"cyanotype booklet": {"title":"'The Crystal Goblet' Booklet", "date":"September 2021", "description":"New York2"},
+"coffee table": {"title":"'William' Coffee Table", "date":"July 2021", "description":"New York2"},
+"eir booklet": {"title":"'Kodak Ektachrome Infrared' Booklet", "date":"October 2021", "description":"New York2"},
+"screenprints": {"title":"Adventures in screenprinting", "date":"December 2021", "description":"New York2"},
+"cabinet and nightstand": {"title":"'Joe and Jack' Small Furniture", "date":"January 2021", "description":"New York2"},
+}}
