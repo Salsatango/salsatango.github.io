@@ -30,12 +30,15 @@ var allSections = document.querySelectorAll('.entriesSection article');
 //this gives an unique numbered class to the divs created.
 			allSections[y].appendChild(newDiv).className = ("date" + (y+1));
 			document.querySelector(".date"+ (y+1)).classList.add("date");
+			document.querySelector(".date"+ (y+1)).classList.add("font1");
 			
 			allSections[y].appendChild(newDiv2).className = ("title" + (y+1));
 			document.querySelector(".title"+ (y+1)).classList.add("title");
+			document.querySelector(".title"+ (y+1)).classList.add("font2");
 			
 			allSections[y].appendChild(newDiv3).className = ("description" + (y+1));
 			document.querySelector(".description"+ (y+1)).classList.add("description");
+			document.querySelector(".description"+ (y+1)).classList.add("font1");
 			
 			y++;
 			console.log(y);
