@@ -14,7 +14,7 @@ background:green;}
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	scroll-behavior: smooth;
+	/*scroll-behavior: smooth;*/
 	}
 html{
 	overflow-x:hidden;
@@ -127,8 +127,8 @@ body {font-size:12px;
 }
 
 .scrollingTextContainer{
-	font-size:15em;
-	height:250px;
+	font-size:12em;
+	height:200px;
 	overflow-x:scroll;
 	overflow-y:hidden;
 }
@@ -176,7 +176,7 @@ background-color:white;}
 	font-size:6em;
 	margin-top:75px;
 	margin-bottom:25px;
-	line-height:1.3em;
+	line-height:1em;
 }
 
 .dateSection{
@@ -213,7 +213,7 @@ background-color:white;}
 	color:transparent;
 	height:100%;
 	font-size:90vh;
-	line-height:93%;
+	line-height:95%;
 	padding-right:100px;
 	padding-left:100px;
 	overflow-x:scroll;
