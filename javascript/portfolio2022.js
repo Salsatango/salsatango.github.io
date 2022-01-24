@@ -155,7 +155,6 @@ scrollSection.forEach
 		console.log("d" + " " + d);
 // d is a function of c and y 
 
-		console.log( " " );
 		element.scrollLeft = (d*x);
 
 })}
@@ -164,7 +163,7 @@ scrollSection.forEach
 
 
 
-
+/*
 //element that follows cursor
 window.addEventListener('mousemove', registerCoords);
 
@@ -188,4 +187,4 @@ element.addEventListener('mouseleave',function() {
 	console.log(mouseImage);
 	mouseImage.style.cssText = "background-image: url(images/net.svg); width:30vw; height:50vh; transform:translateY(0vh)  translateX(0px);";
 }
-
+*/
