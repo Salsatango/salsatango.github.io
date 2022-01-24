@@ -120,6 +120,12 @@ body {font-size:12px;
 	font-family:"Playfair Display";
 }
 
+.description{
+	grid-column:10/13;
+	height:100%;
+	font-size:1em;
+}
+
 .scrollingTextContainer{
 	font-size:15em;
 	height:300px;
@@ -150,12 +156,6 @@ body {font-size:12px;
 
 
 
-.description{
-	grid-column:10/13;
-	height:100%;
-	font-size:1em;
-}
-
 /*This is for the individual pages*/
 .topBar{height:25px;
 width:100vw;
@@ -173,7 +173,7 @@ background-color:white;}
 
 .titleSection{
 	grid-column:1/6;
-	font-size:8em;
+	font-size:4em;
 	margin-top:100px;
 	margin-bottom:50px;
 	line-height:1.1em;
@@ -181,12 +181,12 @@ background-color:white;}
 
 .dateSection{
 	grid-column:1/6;
-	font-size:1.6em;
+	font-size:1.1em;
 	margin-bottom:50px;}
 
 .descriptionSection{
 	grid-column:1/6;
-	font-size:1.6em;
+	font-size:1.1em;
 	margin-bottom:50px;}
 
 .picturesSection{
@@ -209,7 +209,7 @@ background-color:white;}
 
 .fullHeightScrollingText{
 	color:transparent;
-	font-size:95em;
+	font-size:90vh;
 	line-height:90%;
 	padding-right:100px;
 	padding-left:100px;
