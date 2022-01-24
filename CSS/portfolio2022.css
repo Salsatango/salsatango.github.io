@@ -70,7 +70,7 @@ body {font-size:12px;
 	margin-left:5%;
 	margin-right:auto;
 	margin-top:70px;
-	margin-bottom:70px;
+	margin-bottom:50px;
 }
 
 .entriesSection{
@@ -128,7 +128,7 @@ body {font-size:12px;
 
 .scrollingTextContainer{
 	font-size:15em;
-	height:300px;
+	height:250px;
 	overflow-x:scroll;
 	overflow-y:hidden;
 }
@@ -172,17 +172,17 @@ bottom:0;
 background-color:white;}
 
 .titleSection{
-	grid-column:1/6;
-	font-size:4em;
-	margin-top:100px;
-	margin-bottom:50px;
-	line-height:1.1em;
+	grid-column:1/5;
+	font-size:6em;
+	margin-top:75px;
+	margin-bottom:25px;
+	line-height:1.3em;
 }
 
 .dateSection{
-	grid-column:1/6;
-	font-size:1.1em;
-	margin-bottom:50px;}
+	grid-column:1/5;
+	font-size:1.3em;
+	margin-bottom:25px;}
 
 .descriptionSection{
 	grid-column:1/6;
@@ -205,12 +205,15 @@ background-color:white;}
 	overflow-x:scroll;
 	overflow-y:hidden;
 	z-index:-1;
+	height:100%;
+	
 }
 
 .fullHeightScrollingText{
 	color:transparent;
+	height:100%;
 	font-size:90vh;
-	line-height:90%;
+	line-height:93%;
 	padding-right:100px;
 	padding-left:100px;
 	overflow-x:scroll;
