@@ -1,5 +1,7 @@
 
-window.onload = function(){createArticles();numberChildren(); insecureConsoleLogs();populateContent();}
+window.onload = function(){createArticles();numberChildren(); insecureConsoleLogs();populateContent();scroll();}
+
+
 var numberOfEntries = Object.keys(entriesInfo.projects).length;
 
 var y=0;
@@ -77,7 +79,7 @@ var allSections = document.querySelectorAll('.entriesSection article');
 				(entriesInfo.projects[currentProjectIndex].title);
 			console.log(title);
 			var description = 
-				(entriesInfo.projects[currentProjectIndex].description);
+				(entriesInfo.projects[currentProjectIndex].shortDescription);
 			console.log(description);
 		
 				currentProjectDateSection.innerHTML = date;
@@ -95,6 +97,15 @@ var allSections = document.querySelectorAll('.entriesSection article');
 
 
 
+var butt = document.querySelector(".testButton");
+butt.addEventListener('click', testLoad);
+
+function testLoad() {
+	window.location.href = "pageTemplate.html";
+}
+
+
+
 
 
 
@@ -107,3 +118,74 @@ function insecureConsoleLogs(){
 	console.log(entriesInfo.projects.bookshelf.description);
 
 }
+//for auto-scrolling
+
+let scrollSection = document.querySelectorAll(".scrollingTextContainer");
+//you have to initialize a variable before using it.
+
+window.onscroll = function(){scroll();}
+
+
+function scroll(){
+	console.log(scrollSection);
+	
+
+	
+
+	
+scrollSection.forEach
+	(function scroll1(element) {
+		let x = element.scrollWidth;
+		console.log("x" + " " + x);
+//The Element.scrollWidth read-only property is a measurement of the width of an element's content, including content not visible on the screen due to overflow.
+		let y = document.documentElement.clientHeight;
+		console.log("clientHeight" + " " + y);
+//Document.documentElement returns the Element that is the root element of the document (for example, the <html> element for HTML documents).
+
+		let a = document.documentElement.scrollTop  || document.documentElement.scrollTop;
+		console.log("scrollTop" + " "+ a);
+//The Element.scrollTop property gets or sets the number of pixels that an element's content is scrolled vertically.
+		let b = element.offsetTop;
+		console.log("offsetTop" + " " + b);
+	
+		let g = document.documentElement.scrollHeight;
+		console.log("scrollheight" + " " + g);
+	
+		let d = (a/y);
+		console.log("d" + " " + d);
+// d is a function of c and y 
+
+		console.log( " " );
+		element.scrollLeft = (d*x);
+
+})}
+
+
+
+
+
+
+//element that follows cursor
+window.addEventListener('mousemove', registerCoords);
+
+function registerCoords(event) {
+  	var x = event.pageX;
+  	var y = event.pageY;
+
+let cursorFollower = document.querySelector(".followCursor");
+  cursorFollower.style.left = (x) + "px";
+  cursorFollower.style.top = (y) + "px";
+}
+
+
+element.addEventListener('mouseover',function() {
+	console.log(mouseImage);
+	mouseImage.style.cssText = "background-image: url(images/chelsey-faucher-J2VNJcXqaFM-unsplash.jpg); width:50vw; height:75vh; transform:translateY(-20vh) translateX(-20vw);";
+}
+);
+
+element.addEventListener('mouseleave',function() {
+	console.log(mouseImage);
+	mouseImage.style.cssText = "background-image: url(images/net.svg); width:30vw; height:50vh; transform:translateY(0vh)  translateX(0px);";
+}
+

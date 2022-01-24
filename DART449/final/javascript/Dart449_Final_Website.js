@@ -78,6 +78,7 @@ window.onscroll = function() {scroll();
 							  indicateScroll(); }
 
 let scrollSection = document.querySelectorAll(".scrollable");
+
 //I want to preface this by saying I've not done any math in a long time, and this could probably have been done in an easier way.
 //I laid out the variables like this so it was clearer for myself.
 
