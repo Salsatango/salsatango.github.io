@@ -172,8 +172,8 @@ bottom:0;
 background-color:white;}
 
 .titleSection{
-	grid-column:1/5;
-	font-size:6em;
+	grid-column:1/8;
+	font-size:8em;
 	margin-top:75px;
 	margin-bottom:25px;
 	line-height:1em;
@@ -185,7 +185,7 @@ background-color:white;}
 	margin-bottom:25px;}
 
 .descriptionSection{
-	grid-column:1/6;
+	grid-column:1/7;
 	font-size:1.1em;
 	margin-bottom:50px;}
 
