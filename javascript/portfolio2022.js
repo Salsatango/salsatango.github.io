@@ -139,23 +139,36 @@ scrollSection.forEach
 		console.log("x" + " " + x);
 //The Element.scrollWidth read-only property is a measurement of the width of an element's content, including content not visible on the screen due to overflow.
 		let y = document.documentElement.clientHeight;
-		console.log("clientHeight" + " " + y);
+		console.log("clientHeight y" + " " + y);
 //Document.documentElement returns the Element that is the root element of the document (for example, the <html> element for HTML documents).
 
 		let a = document.documentElement.scrollTop  || document.documentElement.scrollTop;
-		console.log("scrollTop" + " "+ a);
+		console.log("scrollTop a" + " "+ a);
 //The Element.scrollTop property gets or sets the number of pixels that an element's content is scrolled vertically.
 		let b = element.offsetTop;
-		console.log("offsetTop" + " " + b);
+		console.log("offsetTop b" + " " + b);
 	
 		let g = document.documentElement.scrollHeight;
-		console.log("scrollheight" + " " + g);
-	
-		let d = (a/y);
-		console.log("d" + " " + d);
-// d is a function of c and y 
+		console.log("scrollheight g" + " " + g);
 
-		element.scrollLeft = (d*x);
+		let d=0;
+		if (((a+y)>b) && (a>0)) {
+			
+		d = (a+y-b-200);
+			}
+		else{
+		d = 0;}
+
+		console.log("d" + " " + d);
+// d is what fraction of the clientheight has been scrolled
+		if(b>y){
+			element.scrollLeft = (d/(y)*x);
+		console.log(element.scrollLeft);
+		}
+		else{
+			element.scrollLeft = (a/(b)*x);
+		}
+
 
 })}
 
