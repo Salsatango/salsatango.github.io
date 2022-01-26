@@ -10,20 +10,7 @@ background:green;}
 
 
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	/*scroll-behavior: smooth;*/
-	cursor: crosshair;
-/*for firefox*/
-scrollbar-color: black white;
-scrollbar-width: 20px;
 
-	}
-html{
-	overflow-x:hidden;
-}
 
 
 ::selection {
@@ -64,7 +51,24 @@ html{
   background: #000001;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*scroll-behavior: smooth;*/
+	cursor: crosshair;
+/*for firefox*/
+scrollbar-color: black white;
+scrollbar-width: 20px;
+
+	}
+html{
+	overflow-x:hidden;
+	size:100%;
+}
+
 body {font-size:12px;
+	size:100%;
 
 }
 
@@ -77,6 +81,18 @@ body {font-size:12px;
 	margin-right:auto;
 	margin-top:70px;
 	margin-bottom:50px;
+}
+
+.heroText2{
+	font-size:6em;
+	line-height:1.1em;
+	width:60%;
+	max-width:1000px;
+	margin-right:5%;
+	margin-left:auto;
+	margin-top:70px;
+	margin-bottom:50px;
+	text-align:right;
 }
 
 .entriesSection{
@@ -183,11 +199,11 @@ background-color:white;}
 
 
 .titleSection{
-	grid-column:1/8;
+	grid-column:1/7;
 	font-size:8em;
 	margin-top:75px;
 	margin-bottom:25px;
-	line-height:1em;
+	line-height:1.1em;
 }
 
 .dateSection{
