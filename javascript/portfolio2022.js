@@ -1,5 +1,5 @@
 
-window.onload = function(){createArticles();numberChildren(); insecureConsoleLogs();populateContent();scroll();}
+window.onload = function(){createArticles();numberChildren(); ConsoleLogs();populateContent();scroll();createLinks();}
 
 
 var numberOfEntries = Object.keys(entriesInfo.projects).length;
@@ -43,44 +43,48 @@ var allSections = document.querySelectorAll('.entriesSection article');
 			document.querySelector(".description"+ (y+1)).classList.add("font1");
 			
 			y++;
-			console.log(y);
+			//console.log(y);
 }}
 
+
+
+
+//This function fills the divs with content from the JSON.
 function populateContent(){
 var allSections = document.querySelectorAll('.entriesSection article');
 	
 	for (var x = 0; x < allSections.length;){
-		console.log(entriesInfo.projects);
-		//create an array and put the entries in entriesInfo.projects in it.
+		//console.log(entriesInfo.projects);
+	//create an array and put the entries in entriesInfo.projects in it.
 			var projectsIndex = [];
 				for (var z in entriesInfo.projects) {
 				projectsIndex.push(z);}
-				console.log(projectsIndex);
+				//console.log(projectsIndex);
 		
-		//get the index of the current project in that array
+	//get the index of the current project in that array
 			var currentProjectIndex = projectsIndex[x];
-			console.log(currentProjectIndex);
+			//console.log(currentProjectIndex);
 		
-		//this is the correct div for the date
+	//this is the correct div for the date
 			var currentProjectDateSection = document.querySelector(".date"+ (x+1));
-			console.log(currentProjectDateSection);
-		//this is the correct div for the title
+			//console.log(currentProjectDateSection);
+	//this is the correct div for the title
 			var currentProjectTitleSection = document.querySelector(".title"+ (x+1));
-			console.log(currentProjectTitleSection);
-		//this is the correct div for the description
+			//console.log(currentProjectTitleSection);
+	//this is the correct div for the description
 			var currentProjectDescriptionSection = document.querySelector(".description"+ (x+1));
-			console.log(currentProjectDescriptionSection);
+			//console.log(currentProjectDescriptionSection);
 		
 		
 			var date = 
 				(entriesInfo.projects[currentProjectIndex].date);
-			console.log(date);
+			//console.log(date);
 			var title = 
 				(entriesInfo.projects[currentProjectIndex].title);
-			console.log(title);
+			//console.log(title);
 			var description = 
 				(entriesInfo.projects[currentProjectIndex].shortDescription);
-			console.log(description);
+			//console.log(description);
 		
 				currentProjectDateSection.innerHTML = date;
 				currentProjectTitleSection.innerHTML = title;
@@ -93,9 +97,49 @@ var allSections = document.querySelectorAll('.entriesSection article');
 }}
 
 
+//this function does what its name says it does
+function ConsoleLogs(){
+
+	console.log("there are" + " " + numberOfEntries + " "+ "entries");
+
+}
 
 
 
+//make the articles clickable. They go to the right pages when clicked
+function createLinks (){
+	var allSections = document.querySelectorAll('.entriesSection article');
+	console.log(allSections);
+	var projectsIndex = [];
+				
+	
+	for (var z in entriesInfo.projects) {
+				projectsIndex.push(z);
+				console.log(projectsIndex);
+				};
+
+
+	for (let w = 0; w < allSections.length; w++){
+
+		let currentProjectName = projectsIndex[w];
+		let currentArticle = document.getElementsByClassName((w + 1));
+//getElementsByClassName returns html collection, so if you need to add event Listener to an element, you will need to do something like following: currentArticle[0].addEventListener('click', ConsoleLogs);
+		
+		console.log(currentArticle[0]);
+		console.log(projectsIndex[w]);
+		console.log(currentProjectName);
+		
+			
+		
+		currentArticle[0].addEventListener('click', function navigateTo(){
+			window.location.href = currentProjectName + ".html";});
+
+		}
+		}
+
+
+
+		
 
 var butt = document.querySelector(".testButton");
 butt.addEventListener('click', testLoad);
@@ -111,13 +155,8 @@ function testLoad() {
 
 
 
-//this function does what its name says it does
-function insecureConsoleLogs(){
-	console.log(entriesInfo.length);
-	console.log(numberOfEntries);
-	console.log(entriesInfo.projects.bookshelf.description);
 
-}
+
 //for auto-scrolling
 
 let scrollSection = document.querySelectorAll(".scrollingTextContainer");
@@ -127,7 +166,7 @@ window.onscroll = function(){scroll();}
 
 
 function scroll(){
-	console.log(scrollSection);
+	//console.log(scrollSection);
 	
 
 	
@@ -136,20 +175,20 @@ function scroll(){
 scrollSection.forEach
 	(function scroll1(element) {
 		let x = element.scrollWidth;
-		console.log("x" + " " + x);
+		//console.log("x" + " " + x);
 //The Element.scrollWidth read-only property is a measurement of the width of an element's content, including content not visible on the screen due to overflow.
 		let y = document.documentElement.clientHeight;
-		console.log("clientHeight y" + " " + y);
+		//console.log("clientHeight y" + " " + y);
 //Document.documentElement returns the Element that is the root element of the document (for example, the <html> element for HTML documents).
 
 		let a = document.documentElement.scrollTop  || document.documentElement.scrollTop;
-		console.log("scrollTop a" + " "+ a);
+		//console.log("scrollTop a" + " "+ a);
 //The Element.scrollTop property gets or sets the number of pixels that an element's content is scrolled vertically.
 		let b = element.offsetTop;
-		console.log("offsetTop b" + " " + b);
+		//console.log("offsetTop b" + " " + b);
 	
 		let g = document.documentElement.scrollHeight;
-		console.log("scrollheight g" + " " + g);
+		//console.log("scrollheight g" + " " + g);
 
 		let d=0;
 		if (((a+y)>b) && (a>0)) {
@@ -159,11 +198,11 @@ scrollSection.forEach
 		else{
 		d = 0;}
 
-		console.log("d" + " " + d);
+		//console.log("d" + " " + d);
 // d is what fraction of the clientheight has been scrolled
 		if(b>y){
 			element.scrollLeft = (d/(y)*x);
-		console.log(element.scrollLeft);
+		//console.log(element.scrollLeft);
 		}
 		else{
 			element.scrollLeft = (a/(b)*x);
@@ -173,7 +212,7 @@ scrollSection.forEach
 })}
 
 
-
+// 
 
 
 /*

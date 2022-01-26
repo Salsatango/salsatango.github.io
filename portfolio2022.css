@@ -15,7 +15,10 @@ background:green;}
 	padding: 0;
 	box-sizing: border-box;
 	/*scroll-behavior: smooth;*/
-	cursor: url(hand.cur), crosshair;
+	cursor: crosshair;
+/*for firefox*/
+scrollbar-color: black white;
+scrollbar-width: 20px;
 
 	}
 html{
@@ -39,9 +42,11 @@ html{
 }
 
 
+
 ::-webkit-scrollbar {
   width: 20px;
 }
+
 
 /* Track */
 ::-webkit-scrollbar-track {
