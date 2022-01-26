@@ -19,6 +19,7 @@ background:green;}
 /*for firefox*/
 scrollbar-color: black white;
 scrollbar-width: 20px;
+	width:100vw;
 
 	}
 html{
