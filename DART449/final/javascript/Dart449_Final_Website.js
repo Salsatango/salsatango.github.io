@@ -22,7 +22,7 @@ function loadfunctions(){
 	fishText();
 }
 
-
+registerCoords(event)
 
 function registerCoords(event) {
   	var x = event.pageX;

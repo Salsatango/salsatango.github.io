@@ -71,23 +71,89 @@ body {font-size:12px;
 	size:100%;
 
 }
+.hudWrapper{
+	width:100%;
+	height:200vh;
+	position:absolute;
+	top:0;
+	z-index:-1;
+}
+.hudOutline{
+	position: -webkit-sticky;
+	position:sticky;
+	width:95%;
+	height:95vh;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:2.5vh;
+	border:2px solid black;
+	top:2.5vh;
+	
+}
+.nav{display:none;}
+
+.navwrapper{
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:2.5vh;
+	z-index:5;
+}
+
+.menuIcon{
+	position:relative;
+	float:right;
+	top:0;
+	right:0;
+	font-size:8em;
+	
+}
+
+.websiteIcon{
+	font-size:12em;
+}
+
+.websiteLogo{
+	font-size:16em;
+	position:relative;
+	top:0;
+	float:left;
+}
+
+.coordinates{
+	font-size:6em;
+	line-height:0.9em;
+	bottom:2.5vw;
+	position:absolute;
+	left:2.5vw;
+	
+}
+
+.coordinateX{
+	font-size:1em;
+	display:inline-block;
+}
+.coordinateY{
+		font-size:1em;
+	display:inline-block;
+}
+
+.titleText{
+	font-size:6.5em;
+	line-height:1.1em;
+	width:65%;
+	max-width:1000px;
+
+}
 
 .heroText{
-	font-size:6em;
-	line-height:1.1em;
-	width:60%;
-	max-width:1000px;
 	margin-left:5%;
 	margin-right:auto;
-	margin-top:70px;
+	margin-top:20vh;
 	margin-bottom:50px;
 }
 
 .heroText2{
-	font-size:6em;
-	line-height:1.1em;
-	width:60%;
-	max-width:1000px;
 	margin-right:5%;
 	margin-left:auto;
 	margin-top:70px;

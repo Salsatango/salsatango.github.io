@@ -1,6 +1,7 @@
 
 window.onload = function(){createArticles();numberChildren(); ConsoleLogs();populateContent();scroll();createLinks();}
 
+window.addEventListener('mousemove', registerCoords);
 
 var numberOfEntries = Object.keys(entriesInfo.projects).length;
 
@@ -140,7 +141,7 @@ function createLinks (){
 
 
 		
-
+/*
 var butt = document.querySelector(".testButton");
 butt.addEventListener('click', testLoad);
 
@@ -149,7 +150,7 @@ function testLoad() {
 }
 
 
-
+*/
 
 
 
@@ -212,8 +213,26 @@ scrollSection.forEach
 })}
 
 
-// 
+// Register cursor coordinates
 
+function registerCoords(event) {
+  	var x = event.pageX;
+  	var y = event.pageY;
+	
+let cursorFollower = document.querySelector(".followCursor");
+  //cursorFollower.style.left = (x) + "px";
+//  cursorFollower.style.top = (y) + "px";
+	
+let coordinateX = document.querySelector(".coordinateX");
+let coordinateY = document.querySelector(".coordinateY");
+	
+	coordinateX.innerHTML  = x;
+	coordinateY.innerHTML  = y;
+	console.log(x);
+	console.log(coordinateX);
+	console.log(y);
+	console.log(coordinateY);
+}
 
 /*
 //element that follows cursor
