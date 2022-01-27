@@ -261,7 +261,7 @@ function hoverImages(){
 		
 			
 			
-		currentArticle[0].addEventListener('mouseenter', function showImage()
+		currentArticle[0].addEventListener('mouseover', function showImage()
 			{
 			cursorFollower.style.backgroundImage = "url("+imageURL+")";
 			cursorFollower.style.opacity = "100";
