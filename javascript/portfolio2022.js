@@ -1,5 +1,5 @@
 
-window.onload = function(){createArticles();numberChildren(); ConsoleLogs();populateContent();scroll();createLinks();}
+window.onload = function(){createArticles();numberChildren(); ConsoleLogs();populateContent();scroll();createLinks();hoverImages();}
 
 window.addEventListener('mousemove', registerCoords);
 
@@ -213,6 +213,11 @@ scrollSection.forEach
 })}
 
 
+
+
+
+
+
 // Register cursor coordinates
 
 function registerCoords(event) {
@@ -220,18 +225,55 @@ function registerCoords(event) {
   	var y = event.pageY;
 	
 let cursorFollower = document.querySelector(".followCursor");
-  //cursorFollower.style.left = (x) + "px";
-//  cursorFollower.style.top = (y) + "px";
+  cursorFollower.style.left = (x) + "px";
+	cursorFollower.style.top = (y) + "px";
 	
 let coordinateX = document.querySelector(".coordinateX");
 let coordinateY = document.querySelector(".coordinateY");
 	
 	coordinateX.innerHTML  = x;
 	coordinateY.innerHTML  = y;
-	console.log(x);
-	console.log(coordinateX);
-	console.log(y);
-	console.log(coordinateY);
+}
+
+
+//display image when you hover over articles
+function hoverImages(){
+	var allSections = document.querySelectorAll('.entriesSection article');
+	var allSectionsBlock = document.querySelector('.entriesSection');
+	console.log(allSections);
+	var projectsIndex = [];
+	let cursorFollower = document.querySelector(".followCursor");
+	console.log(cursorFollower);
+	
+	for (var z in entriesInfo.projects) {
+				projectsIndex.push(z);
+				console.log(projectsIndex);
+				};
+	
+		for (let w = 0; w < allSections.length; w++){
+
+		let currentProjectName = projectsIndex[w];
+			console.log(currentProjectName);
+		let currentArticle = document.getElementsByClassName((w + 1));
+			console.log(currentArticle[0]);
+		let imageURL = (entriesInfo.projects[currentProjectName].pictures.picture1);
+			console.log(imageURL);
+		
+			
+			
+		currentArticle[0].addEventListener('mouseenter', function showImage()
+			{
+			cursorFollower.style.backgroundImage = "url("+imageURL+")";
+			cursorFollower.style.opacity = "100";
+			}
+										  );
+			
+			allSectionsBlock.addEventListener('mouseleave', function hideImage()
+			{
+			cursorFollower.style.opacity = "0";
+			}
+										  );
+}
 }
 
 /*

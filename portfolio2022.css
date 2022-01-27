@@ -71,13 +71,24 @@ body {font-size:12px;
 	size:100%;
 
 }
+
+.followCursor{
+	position:absolute;
+	width:700px;
+	height:500px;
+	transition: 0.15s!important;
+	z-index:6;
+	background-size: cover;
+}
+
 .hudWrapper{
 	width:100%;
-	height:200vh;
+	height:250vh;
 	position:absolute;
 	top:0;
 	z-index:-1;
 }
+
 .hudOutline{
 	position: -webkit-sticky;
 	position:sticky;
@@ -149,7 +160,7 @@ body {font-size:12px;
 .heroText{
 	margin-left:5%;
 	margin-right:auto;
-	margin-top:20vh;
+	margin-top:25vh;
 	margin-bottom:50px;
 }
 
