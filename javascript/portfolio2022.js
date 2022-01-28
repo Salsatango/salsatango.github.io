@@ -1,5 +1,5 @@
 
-window.onload = function(){createArticles();numberChildren(); ConsoleLogs();populateContent();scroll();createLinks();hoverImages();}
+window.onload = function(){whyDoesMyWebsiteLoadAlreadyScrolled();createArticles();numberChildren(); ConsoleLogs();populateContent();scroll();createLinks();hoverImages();}
 
 window.addEventListener('mousemove', registerCoords);
 window.addEventListener('mousewheel', registerCoords); 
@@ -8,6 +8,10 @@ var numberOfEntries = Object.keys(entriesInfo.projects).length;
 
 var y=0;
 
+
+function whyDoesMyWebsiteLoadAlreadyScrolled(){
+	window.scrollTo(0,0);
+}
 //this function creates the same number of articles in the grid section than there are in the JSON file.
 function createArticles (){
 	for(d=0; d<numberOfEntries; d++){
