@@ -2,6 +2,7 @@
 window.onload = function(){createArticles();numberChildren(); ConsoleLogs();populateContent();scroll();createLinks();hoverImages();}
 
 window.addEventListener('mousemove', registerCoords);
+window.addEventListener('mousewheel', registerCoords); 
 
 var numberOfEntries = Object.keys(entriesInfo.projects).length;
 
@@ -110,13 +111,13 @@ function ConsoleLogs(){
 //make the articles clickable. They go to the right pages when clicked
 function createLinks (){
 	var allSections = document.querySelectorAll('.entriesSection article');
-	console.log(allSections);
+	//console.log(allSections);
 	var projectsIndex = [];
 				
 	
 	for (var z in entriesInfo.projects) {
 				projectsIndex.push(z);
-				console.log(projectsIndex);
+				//console.log(projectsIndex);
 				};
 
 
@@ -126,9 +127,9 @@ function createLinks (){
 		let currentArticle = document.getElementsByClassName((w + 1));
 //getElementsByClassName returns html collection, so if you need to add event Listener to an element, you will need to do something like following: currentArticle[0].addEventListener('click', ConsoleLogs);
 		
-		console.log(currentArticle[0]);
-		console.log(projectsIndex[w]);
-		console.log(currentProjectName);
+		//console.log(currentArticle[0]);
+		//console.log(projectsIndex[w]);
+		//console.log(currentProjectName);
 		
 			
 		
@@ -221,33 +222,60 @@ scrollSection.forEach
 // Register cursor coordinates
 
 function registerCoords(event) {
-  	var x = event.pageX;
-  	var y = event.pageY;
+  	let x = event.pageX;
+  	let y = event.pageY;
+
+let freeSpaceRight = document.documentElement.clientWidth - x;
+let freeSpaceBottom = document.documentElement.clientHeight + document.documentElement.scrollTop - y;
 	
+	console.log("free space to the right:"+freeSpaceRight);
+	console.log("free space to the bottom:"+freeSpaceBottom);
 let cursorFollower = document.querySelector(".followCursor");
-  cursorFollower.style.left = (x) + "px";
-	cursorFollower.style.top = (y) + "px";
+	
+	if (freeSpaceRight > 800 && freeSpaceBottom > 500) {
+		cursorFollower.style.left = (x) + "px";
+		cursorFollower.style.top = (y) + "px";
+	}
+		else if( freeSpaceRight < 800 &&  freeSpaceBottom > 500){
+		cursorFollower.style.left = x-(800-freeSpaceRight) + "px";
+		cursorFollower.style.top = (y) + "px";
+		}
+		else if( freeSpaceRight > 800 &&  freeSpaceBottom < 500){
+		cursorFollower.style.left = (x) + "px";
+		cursorFollower.style.top = y-(500-freeSpaceBottom) + "px";	
+		}
+		else {
+			cursorFollower.style.left = x-(800-freeSpaceRight) + "px";
+			cursorFollower.style.top = y-(500-freeSpaceBottom) + "px";
+		}
+
 	
 let coordinateX = document.querySelector(".coordinateX");
 let coordinateY = document.querySelector(".coordinateY");
 	
 	coordinateX.innerHTML  = x;
 	coordinateY.innerHTML  = y;
-}
+	
+
+} 
+
+
+
+
 
 
 //display image when you hover over articles
 function hoverImages(){
 	var allSections = document.querySelectorAll('.entriesSection article');
 	var allSectionsBlock = document.querySelector('.entriesSection');
-	console.log(allSections);
+	//console.log(allSections);
 	var projectsIndex = [];
 	let cursorFollower = document.querySelector(".followCursor");
-	console.log(cursorFollower);
+	//console.log(cursorFollower);
 	
 	for (var z in entriesInfo.projects) {
 				projectsIndex.push(z);
-				console.log(projectsIndex);
+				//console.log(projectsIndex);
 				};
 	
 		for (let w = 0; w < allSections.length; w++){
