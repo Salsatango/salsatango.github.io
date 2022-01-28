@@ -83,7 +83,7 @@ body {font-size:12px;
 
 .hudWrapper{
 	width:100%;
-	height:150vh;
+	height:250vh;
 	position:absolute;
 	top:0;
 	z-index:-1;
@@ -97,7 +97,8 @@ body {font-size:12px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:2.5vh;
-	border:2px solid black;
+	border:2px solid red;
+	color:red;
 	top:2.5vh;
 	
 }
@@ -145,7 +146,7 @@ body {font-size:12px;
 	display:inline-block;
 }
 .coordinateY{
-		font-size:1em;
+	font-size:1em;
 	display:inline-block;
 }
 
@@ -169,7 +170,7 @@ body {font-size:12px;
 	margin-left:auto;
 	margin-top:70px;
 	margin-bottom:50px;
-	text-align:right;
+	text-align:left;
 }
 
 .entriesSection{
@@ -226,12 +227,15 @@ body {font-size:12px;
 	font-size:1em;
 }
 
+/*for the text that scrolls when you scroll*/
 .scrollingTextContainer{
 	font-size:12em;
 	height:200px;
 	overflow-x:scroll;
 	overflow-y:hidden;
 }
+
+
 .scrollingTextContainer::-webkit-scrollbar {height:0;}
 
 .scrollingText{
@@ -243,12 +247,45 @@ body {font-size:12px;
 	mix-blend-mode: darken;
 	-webkit-text-stroke-width: 1px;
   	-webkit-text-stroke-color: black;
+	
 
 }
 
+/*for the text that scrolls by itself*/
+.animatedScrollingTextContainer{
+	font-size:12em;
+	height:200px;
+	overflow-x:scroll;
+	overflow-y:hidden;
+}
+.animatedScrollingText{
+	color:transparent;
+	padding-right:100px;
+	padding-left:100px;
+	overflow-x:scroll;
+	overflow: auto; 
+	mix-blend-mode: darken;
+	
+	animation: autoScroll;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  	animation-duration: 60s;
+	
+	
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;
+
+}
+
+@keyframes autoScroll {
+  0% {transform: translateX(20%);}
+  100% {transform: translateX(-100%);}
+}
+
+.animatedScrollingTextContainer::-webkit-scrollbar {height:0;}
 
 .scrollSize1{width:450%;}
-.scrollSize2{width:650%;}
+.scrollSize2{width:550%;}
 .scrollSize3{width:850%;}
 
 
