@@ -179,7 +179,7 @@ font-weight:500;}
 .titleText{
 	font-size:8em;
 	line-height:1.3em;
-	width:90%;
+	width:80%;
 
 }
 
@@ -191,8 +191,8 @@ font-weight:500;}
 }
 
 .heroText2{
-	margin-right:5%;
-	margin-left:auto;
+	margin-left:5%;
+	margin-right:auto;;
 	margin-top:70px;
 	margin-bottom:50px;
 	text-align:left;
