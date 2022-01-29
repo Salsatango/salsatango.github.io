@@ -463,7 +463,7 @@ function createObserver2() {
   let options = {
     root: null,
     rootMargin: "0px",
-    threshold: 1
+    threshold: 0.1
   };
 	
 //I think you can replace "observer" here with any name. this one executes the function "appearTrigger" when the threshhold specified in options is crossed.
