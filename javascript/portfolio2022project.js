@@ -1,4 +1,6 @@
-window.onload = function(){getTitle(); createPictureDivs();numberChildren() ;populateImages();focusOnImage();unfocusOnImage();consoleLogs();}
+window.onload = function(){getTitle(); createPictureDivs();numberChildren() ;populateImages();focusOnImage();unfocusOnImage();consoleLogs();triggerOnScroll();}
+
+
 
 
 var path = window.location.pathname;
@@ -180,7 +182,20 @@ function unfocusOnImage(){
 	}						   
 							   )
 }
+	let thingThatScrolls = document.querySelector(".fullHeightScrollingTextContainer");
 
+function triggerOnScroll(){
+
+	document.addEventListener('scroll', appear(thingThatScrolls));
+}
+
+function appear(element){
+	element.classList.remove("hidden");
+}
+
+function fadeOut(element){
+	element.classList.add("hidden");
+}
 
 /*
 function focusOnImage(){
