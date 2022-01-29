@@ -477,6 +477,8 @@ function disappear(entries, Observer2){
 	entries.forEach(entry=> {
 		if(entry.isIntersecting)
 			{fadeOut(frame);}
+		else
+			{appear(frame);}
 							}
 	
 				   )}
