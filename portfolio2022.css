@@ -73,15 +73,16 @@ html{
 
 body {font-size:12px;
 	width:100vw;
-	
-
 
 }
 
 
 
 .websiteContainer{	
-
+background-color:#f7f7f7;
+	mix-blend-mode:multiply;
+	position:absolute;
+	top:0;
 	}
 
 
@@ -97,7 +98,7 @@ font-weight:500;}
 	width:800px;
 	height:500px;
 	transition-duration: 100ms!important;
-	z-index:-1;
+	z-index:1;
 	background-size: cover;
 }
 
@@ -229,7 +230,9 @@ article:hover{
 	display:grid;
 	grid-template-columns:repeat(12, 1fr);
 	grid-column-gap:20px;
-
+	
+	z-index:2;
+	
 	transition-duration:550ms;}
 
 
@@ -291,6 +294,9 @@ article:hover{
 /*for the text that scrolls by itself*/
 .animatedScrollingTextContainer{
 	font-size:12em;
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;
+	mix-blend-mode: darken;
 	height:200px;
 	overflow-x:scroll;
 	overflow-y:hidden;
@@ -299,18 +305,32 @@ article:hover{
 	color:transparent;
 	padding-right:100px;
 	padding-left:100px;
-	overflow-x:scroll;
-	overflow: auto; 
-	mix-blend-mode: darken;
-	
 	animation: autoScroll;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
-  	animation-duration: 60s;
-	
-	
-	-webkit-text-stroke-width: 1px;
-  	-webkit-text-stroke-color: black;
+  	animation-duration: 50s;
+
+}
+
+.animatedScrollingText2{
+	color:transparent;
+	padding-right:100px;
+	padding-left:100px;
+	animation: autoScroll;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  	animation-duration: 45s;
+
+}
+
+.animatedScrollingText3{
+	color:transparent;
+	padding-right:100px;
+	padding-left:100px;
+	animation: autoScroll;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  	animation-duration: 50s;
 
 }
 
@@ -510,3 +530,19 @@ background-color:white;}
 	
 }
 
+/*for mobile*/
+
+@media only screen and (max-width: 600px) {
+
+    .followCursor{
+display:none;
+
+  }
+	.hudWrapper{
+display:none;
+}
+	.entriesSection{
+		width:100%;
+	}
+	
+}
