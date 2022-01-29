@@ -1,5 +1,8 @@
 
-window.onload = function(){whyDoesMyWebsiteLoadAlreadyScrolled();createObserver();createArticles();numberChildren(); ConsoleLogs();populateContent();scroll();createLinks();hoverImages();}
+window.onload = function(){whyDoesMyWebsiteLoadAlreadyScrolled();createObserver1();createObserver2();createArticles();numberChildren(); ConsoleLogs();populateContent();scroll();createLinks();hoverImages();
+						  
+					
+			createMenuArticles();numberMenuChildren();populatemenuContent();menu()}
 
 window.addEventListener('mousemove', registerCoords);
 window.addEventListener('mousewheel', registerCoords); 
@@ -17,6 +20,7 @@ function createArticles (){
 	for(d=0; d<numberOfEntries; d++){
 	var newArticle = document.createElement("article");
 	document.querySelector(".entriesSection").appendChild(newArticle);
+		
 }
 	 return;
 }
@@ -42,7 +46,7 @@ var allSections = document.querySelectorAll('.entriesSection article');
 			
 			allSections[y].appendChild(newDiv2).className = ("title" + (y+1));
 			document.querySelector(".title"+ (y+1)).classList.add("title");
-			document.querySelector(".title"+ (y+1)).classList.add("font2");
+			document.querySelector(".title"+ (y+1)).classList.add("font3");
 			
 			allSections[y].appendChild(newDiv3).className = ("description" + (y+1));
 			document.querySelector(".description"+ (y+1)).classList.add("description");
@@ -51,6 +55,7 @@ var allSections = document.querySelectorAll('.entriesSection article');
 			y++;
 			//console.log(y);
 }}
+
 
 
 
@@ -106,6 +111,96 @@ let allSections = document.querySelectorAll('.entriesSection article');
 	
 
 }
+
+
+//for the nav
+
+function createMenuArticles (){
+	for(d=0; d<numberOfEntries; d++){
+	var newMenuArticle = document.createElement("article");
+	document.querySelector(".navMenu").appendChild(newMenuArticle);
+		
+}
+	 return;
+}
+
+function numberMenuChildren(){
+//I originally used "async/await" here
+
+var allMenuSections = document.querySelectorAll('.navMenu article');
+//this variable is declared after the divs are created.	
+		for (var y = 0; y < allMenuSections.length;){
+			allMenuSections[y].classList.add(y+1);
+
+//this part adds another div inside each new numbered div
+			var newDiv = document.createElement("div");
+//this gives an unique numbered class to the divs created.
+			
+			allMenuSections[y].appendChild(newDiv).className = ("menuTitle" + (y+1));
+			
+			y++;
+			//console.log(y);
+}}
+
+
+
+function populatemenuContent(){
+let allMenuSections = document.querySelectorAll('.navMenu article');
+	
+	for (var x = 0; x < allMenuSections.length;){
+		//console.log(entriesInfo.projects);
+	//create an array and put the entries in entriesInfo.projects in it.
+			var projectsIndex = [];
+				for (var z in entriesInfo.projects) {
+				projectsIndex.push(z);}
+				//console.log(projectsIndex);
+		
+	//get the index of the current project in that array
+			var currentProjectIndex = projectsIndex[x];
+			//console.log(currentProjectIndex);
+		
+			var currentProjectTitleSection = document.querySelector(".menuTitle"+ (x+1));
+
+			var title = 
+				(entriesInfo.projects[currentProjectIndex].title);
+			//console.log(title);
+
+				currentProjectTitleSection.innerHTML = title;
+
+
+		
+		x++;
+		
+	
+		
+}
+}
+
+	function menu(){
+let navMenu = document.querySelector(".nav");
+	console.log(navMenu);
+let openMenu = document.querySelector(".menuIcon");
+let closeMenu = document.querySelector(".navClose")
+ 
+openMenu.addEventListener('click', function uncollapseMenu(){
+uncollapse(navMenu);
+uncollapse(closeMenu);
+console.log("open");
+														}
+						)
+closeMenu.addEventListener('click', function collapseMenu(){
+collapse(navMenu);
+collapse(closeMenu);
+console.log("close");
+
+}
+						)
+}
+
+
+
+
+
 
 
 //this function does what its name says it does
@@ -177,9 +272,6 @@ window.onscroll = function(){scroll();}
 
 function scroll(){
 	//console.log(scrollSection);
-	
-
-	
 
 	
 scrollSection.forEach
@@ -331,8 +423,8 @@ function hoverImages(){
 
 let observer;
 let appearWhenReached = document.querySelectorAll(".appearWhenReached");
-	
-function createObserver() {
+
+function createObserver1() {
   let observer;
 
   let options = {
@@ -352,18 +444,60 @@ appearWhenReached.forEach(entry => {
 
 
 
-function appearTrigger(entries, Observer){
+function appearTrigger(entries, Observer1){
 	entries.forEach(entry => {
     if (entry.isIntersecting) {
      entry.target.classList.remove("hidden");}
 		
 	//else{entry.target.classList.add("hidden");}
 	})}
+
+
+//to make the frame dissapear when the viewport reaches target
+let target = document.querySelector(".trigger2");
+
+function createObserver2() {
+	
+  let observer;
+
+  let options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1
+  };
+	
+//I think you can replace "observer" here with any name. this one executes the function "appearTrigger" when the threshhold specified in options is crossed.
+	
+Observer2 = new IntersectionObserver(disappear, options);
+Observer2.observe(target);
+	
+}
+let frame = document.querySelector(".hudWrapper");
+function disappear(entries, Observer2){
+	entries.forEach(entry=> {
+		if(entry.isIntersecting)
+			{fadeOut(frame);}
+							}
+	
+				   )}
+
+
+
+
+
+
+
 	
 
 
 
+function collapse(element){
+	element.classList.add("collapsed");
+}
 
+function uncollapse(element){
+	element.classList.remove("collapsed");
+}
 
 
 function appear(element){
@@ -381,28 +515,3 @@ function highlight(element){
 function unhighlight(element){
 	element.classList.remove("hightlighted");
 }
-/*
-//element that follows cursor
-window.addEventListener('mousemove', registerCoords);
-
-function registerCoords(event) {
-  	var x = event.pageX;
-  	var y = event.pageY;
-
-let cursorFollower = document.querySelector(".followCursor");
-  cursorFollower.style.left = (x) + "px";
-  cursorFollower.style.top = (y) + "px";
-}
-
-
-element.addEventListener('mouseover',function() {
-	console.log(mouseImage);
-	mouseImage.style.cssText = "background-image: url(images/chelsey-faucher-J2VNJcXqaFM-unsplash.jpg); width:50vw; height:75vh; transform:translateY(-20vh) translateX(-20vw);";
-}
-);
-
-element.addEventListener('mouseleave',function() {
-	console.log(mouseImage);
-	mouseImage.style.cssText = "background-image: url(images/net.svg); width:30vw; height:50vh; transform:translateY(0vh)  translateX(0px);";
-}
-*/

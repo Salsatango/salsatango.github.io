@@ -1,4 +1,4 @@
-window.onload = function(){getTitle(); createPictureDivs();numberChildren() ;populateImages();focusOnImage();unfocusOnImage();consoleLogs();triggerOnScroll();}
+window.onload = function(){getTitle(); createPictureDivs();numberChildren() ;populateImages();focusOnImage();unfocusOnImage();createObserver();}
 
 
 
@@ -182,12 +182,40 @@ function unfocusOnImage(){
 	}						   
 							   )
 }
-	let thingThatScrolls = document.querySelector(".fullHeightScrollingTextContainer");
 
-function triggerOnScroll(){
+let thingThatScrolls = document.querySelector(".fullHeightScrollingTextContainer");
+let target = document.querySelector(".trigger");
+function createObserver() {
+  let observer;
 
-	document.addEventListener('scroll', appear(thingThatScrolls));
+  let options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1
+  };
+	//I think you can replace "observer" here with any name. this one executes the function "ayy" when the threshhold specified in options is crossed.
+	
+  observer = new IntersectionObserver(textAppear, options);
+  observer.observe(target);
+
 }
+
+function textAppear(entries, observer){
+	  entries.forEach(entry => {
+		  
+    if (entry.isIntersecting) {
+      appear(thingThatScrolls);}
+		  else{fadeOut(thingThatScrolls);}
+	})
+}
+
+
+
+
+
+
+
+
 
 function appear(element){
 	element.classList.remove("hidden");
@@ -197,26 +225,18 @@ function fadeOut(element){
 	element.classList.add("hidden");
 }
 
-/*
-function focusOnImage(){
-	let images = document.querySelectorAll(".picturesSection div");
-	let background = document.querySelector(".background");
-	
-	images.forEach(
 
-		function(element){
-			element.addEventListener('click', 		
-									 function zoom(element){
-			element.classList.add("opaque");
-		});
-			console.log(element);
-		}
 
-	
-	)
-}*/
 
-function consoleLogs(){
 
-}
+
+
+
+
+
+//for the Nav menu
+
+
+
+
 
