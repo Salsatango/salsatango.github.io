@@ -66,7 +66,7 @@ background:green;}
 html{
 	overflow-x:hidden;
 	cursor: crosshair;
-		scrollbar-color: black white;
+	scrollbar-color: black white;
 	scrollbar-width: 20px;
 
 }
@@ -99,6 +99,8 @@ font-weight:500;}
 	transition-duration: 100ms!important;
 	z-index:1;
 	background-size: cover;
+	left:0;
+	top:0;
 }
 
 .hudWrapper{
