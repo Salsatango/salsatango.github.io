@@ -1,5 +1,5 @@
 
-window.onload = function(){whyDoesMyWebsiteLoadAlreadyScrolled();createArticles();numberChildren(); ConsoleLogs();populateContent();scroll();createLinks();hoverImages();}
+window.onload = function(){whyDoesMyWebsiteLoadAlreadyScrolled();createObserver();createArticles();numberChildren(); ConsoleLogs();populateContent();scroll();createLinks();hoverImages();}
 
 window.addEventListener('mousemove', registerCoords);
 window.addEventListener('mousewheel', registerCoords); 
@@ -57,7 +57,7 @@ var allSections = document.querySelectorAll('.entriesSection article');
 
 //This function fills the divs with content from the JSON.
 function populateContent(){
-var allSections = document.querySelectorAll('.entriesSection article');
+let allSections = document.querySelectorAll('.entriesSection article');
 	
 	for (var x = 0; x < allSections.length;){
 		//console.log(entriesInfo.projects);
@@ -100,12 +100,16 @@ var allSections = document.querySelectorAll('.entriesSection article');
 		x++;
 		
 	
-}}
+		
+	
+}
+	
+
+}
 
 
 //this function does what its name says it does
 function ConsoleLogs(){
-
 	console.log("there are" + " " + numberOfEntries + " "+ "entries");
 
 }
@@ -232,8 +236,8 @@ function registerCoords(event) {
 let freeSpaceRight = document.documentElement.clientWidth - x;
 let freeSpaceBottom = document.documentElement.clientHeight + document.documentElement.scrollTop - y;
 	
-	console.log("free space to the right:"+freeSpaceRight);
-	console.log("free space to the bottom:"+freeSpaceBottom);
+	//console.log("free space to the right:"+freeSpaceRight);
+	//console.log("free space to the bottom:"+freeSpaceBottom);
 let cursorFollower = document.querySelector(".followCursor");
 	
 	if (freeSpaceRight > 800 && freeSpaceBottom > 500) {
@@ -285,11 +289,11 @@ function hoverImages(){
 		for (let w = 0; w < allSections.length; w++){
 
 		let currentProjectName = projectsIndex[w];
-			console.log(currentProjectName);
+			//console.log(currentProjectName);
 		let currentArticle = document.getElementsByClassName((w + 1));
-			console.log(currentArticle[0]);
+			//console.log(currentArticle[0]);
 		let imageURL = (entriesInfo.projects[currentProjectName].pictures.picture1);
-			console.log(imageURL);
+			//console.log(imageURL);
 		
 			
 			
@@ -305,9 +309,78 @@ function hoverImages(){
 			cursorFollower.style.opacity = "0";
 			}
 										  );
+//If I wanted to use a function to highlight instead of article:hover
+			currentArticle[0].addEventListener("mouseover", function highlightArticle(){
+				highlight(currentArticle[0]);			
+			}
+											  )
+			
+			currentArticle[0].addEventListener("mouseleave", function unhighlightArticle(){
+				unhighlight(currentArticle[0]);			
+			}
+											  )
+
+			
+
 }
 }
 
+
+
+
+
+let observer;
+let appearWhenReached = document.querySelectorAll(".appearWhenReached");
+	
+function createObserver() {
+  let observer;
+
+  let options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.4
+  };
+	
+//I think you can replace "observer" here with any name. this one executes the function "appearTrigger" when the threshhold specified in options is crossed.
+	
+Observer = new IntersectionObserver(appearTrigger, options);
+
+appearWhenReached.forEach(entry => {
+ Observer.observe(entry);	
+})
+}
+
+
+
+function appearTrigger(entries, Observer){
+	entries.forEach(entry => {
+    if (entry.isIntersecting) {
+     entry.target.classList.remove("hidden");}
+		
+	//else{entry.target.classList.add("hidden");}
+	})}
+	
+
+
+
+
+
+
+function appear(element){
+	element.classList.remove("hidden");
+}
+
+function fadeOut(element){
+	element.classList.add("hidden");
+}
+
+function highlight(element){
+	element.classList.add("hightlighted");
+}
+
+function unhighlight(element){
+	element.classList.remove("hightlighted");
+}
 /*
 //element that follows cursor
 window.addEventListener('mousemove', registerCoords);
