@@ -78,16 +78,10 @@ body {font-size:12px;
 
 }
 
-@keyframes spin{
-from { transform: rotateY(0deg) translateX(120px); }
-to { transform: rotateY(360deg) translateX(120px); }
-}
+
 
 .websiteContainer{	
-	animation: spin;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-  	animation-duration: 5s;
+
 	}
 
 
