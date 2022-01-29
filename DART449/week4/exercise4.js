@@ -6,7 +6,7 @@
 
 var text = document.querySelector('.dynamicText');
 var colorChoices = ["white","tan","sunlight","sky","sky2","sky3","white2","sky4","sky5","sky6","sand","sky7","sky8","ocean"];
-//I put a liot of hues of blue, so the picture would mostly be blue. 
+//I put a liot of hues of #2bc7ff, so the picture would mostly be #2bc7ff. 
 var x = 0;
 var z = 0;
 var allDivs = document.querySelectorAll('.Canvas div');
