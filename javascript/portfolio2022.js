@@ -130,7 +130,7 @@ function numberMenuChildren(){
 var allMenuSections = document.querySelectorAll('.navMenu article');
 //this variable is declared after the divs are created.	
 		for (var y = 0; y < allMenuSections.length;){
-			allMenuSections[y].classList.add(y+1);
+			allMenuSections[y].classList.add("menu" + (y+1));
 
 //this part adds another div inside each new numbered div
 			var newDiv = document.createElement("div");
@@ -163,7 +163,7 @@ let allMenuSections = document.querySelectorAll('.navMenu article');
 
 			var title = 
 				(entriesInfo.projects[currentProjectIndex].title);
-			//console.log(title);
+			console.log(title);
 
 				currentProjectTitleSection.innerHTML = title;
 
@@ -402,15 +402,17 @@ function hoverImages(){
 			}
 										  );
 //If I wanted to use a function to highlight instead of article:hover
-			currentArticle[0].addEventListener("mouseover", function highlightArticle(){
+			currentArticle[0].addEventListener("mouseenter", function highlightArticle(){
+
 				highlight(currentArticle[0]);			
 			}
-											  )
+											  );
 			
 			currentArticle[0].addEventListener("mouseleave", function unhighlightArticle(){
-				unhighlight(currentArticle[0]);			
+				unhighlight(currentArticle[0]);	
+				console.log(currentArticle[0]);
 			}
-											  )
+											  );
 
 			
 
@@ -463,7 +465,7 @@ function createObserver2() {
   let options = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.1
+    threshold: 0.4
   };
 	
 //I think you can replace "observer" here with any name. this one executes the function "appearTrigger" when the threshhold specified in options is crossed.
@@ -489,9 +491,6 @@ function disappear(entries, Observer2){
 
 
 
-	
-
-
 
 function collapse(element){
 	element.classList.add("collapsed");
@@ -511,9 +510,9 @@ function fadeOut(element){
 }
 
 function highlight(element){
-	element.classList.add("hightlighted");
+	element.classList.add("highlighted");
 }
 
 function unhighlight(element){
-	element.classList.remove("hightlighted");
+	element.classList.remove("highlighted");
 }
