@@ -474,13 +474,23 @@ Observer2 = new IntersectionObserver(disappear, options);
 Observer2.observe(target);
 	
 }
-let frame = document.querySelector(".hudWrapper");
+let frame = document.querySelector(".Outline");
+let nav = document.querySelector(".navwrapper");
+let coordinates = document.querySelector(".coordinates");
+let contactInfo = document.querySelector(".contactInfo");
+
 function disappear(entries, Observer2){
 	entries.forEach(entry=> {
 		if(entry.isIntersecting)
-			{fadeOut(frame);}
+			{fadeOut(frame);
+			fadeOut(nav);
+			fadeOut(coordinates);
+			fadeOut(contactInfo);}
 		else
-			{appear(frame);}
+			{appear(frame);
+			appear(nav);
+			appear(coordinates);
+			appear(contactInfo);}
 							}
 	
 				   )}

@@ -1,8 +1,11 @@
-window.onload = function(){getTitle(); createPictureDivs();numberChildren() ;populateImages();focusOnImage();unfocusOnImage();createObserver();}
+window.onload = function(){getTitle(); createPictureDivs();numberChildren() ;populateImages();focusOnImage();unfocusOnImage();createObserver();
+						  
+						  
+						  createMenuArticles ();numberMenuChildren();populatemenuContent();menu();}
 
 
 
-
+var numberOfEntries = Object.keys(entriesInfo.projects).length;
 var path = window.location.pathname;
 var page = path.split("/").pop();
 var pageFile = page.replace(".html", "");
@@ -217,12 +220,29 @@ function textAppear(entries, observer){
 
 
 
+function collapse(element){
+	element.classList.add("collapsed");
+}
+
+function uncollapse(element){
+	element.classList.remove("collapsed");
+}
+
+
 function appear(element){
 	element.classList.remove("hidden");
 }
 
 function fadeOut(element){
 	element.classList.add("hidden");
+}
+
+function highlight(element){
+	element.classList.add("highlighted");
+}
+
+function unhighlight(element){
+	element.classList.remove("highlighted");
 }
 
 
@@ -236,7 +256,87 @@ function fadeOut(element){
 
 //for the Nav menu
 
+function createMenuArticles (){
+	for(d=0; d<numberOfEntries; d++){
+	var newMenuArticle = document.createElement("article");
+	document.querySelector(".navMenu").appendChild(newMenuArticle);
+		
+}
+	 return;
+}
 
+function numberMenuChildren(){
+//I originally used "async/await" here
+
+var allMenuSections = document.querySelectorAll('.navMenu article');
+//this variable is declared after the divs are created.	
+		for (var y = 0; y < allMenuSections.length;){
+			allMenuSections[y].classList.add("menu" + (y+1));
+
+//this part adds another div inside each new numbered div
+			var newDiv = document.createElement("div");
+//this gives an unique numbered class to the divs created.
+			
+			allMenuSections[y].appendChild(newDiv).className = ("menuTitle" + (y+1));
+			
+			y++;
+			//console.log(y);
+}}
+
+
+
+function populatemenuContent(){
+let allMenuSections = document.querySelectorAll('.navMenu article');
+	
+	for (var x = 0; x < allMenuSections.length;){
+		//console.log(entriesInfo.projects);
+	//create an array and put the entries in entriesInfo.projects in it.
+			var projectsIndex = [];
+				for (var z in entriesInfo.projects) {
+				projectsIndex.push(z);}
+				//console.log(projectsIndex);
+		
+	//get the index of the current project in that array
+			var currentProjectIndex = projectsIndex[x];
+			//console.log(currentProjectIndex);
+		
+			var currentProjectTitleSection = document.querySelector(".menuTitle"+ (x+1));
+
+			var title = 
+				(entriesInfo.projects[currentProjectIndex].title);
+			console.log(title);
+
+				currentProjectTitleSection.innerHTML = title;
+
+
+		
+		x++;
+		
+	
+		
+}
+}
+
+	function menu(){
+let navMenu = document.querySelector(".nav");
+	console.log(navMenu);
+let openMenu = document.querySelector(".menuIcon");
+let closeMenu = document.querySelector(".navClose")
+ 
+openMenu.addEventListener('click', function uncollapseMenu(){
+uncollapse(navMenu);
+uncollapse(closeMenu);
+console.log("open");
+														}
+						)
+closeMenu.addEventListener('click', function collapseMenu(){
+collapse(navMenu);
+collapse(closeMenu);
+console.log("close");
+
+}
+						)
+}
 
 
 

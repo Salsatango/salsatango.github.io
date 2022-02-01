@@ -116,6 +116,7 @@ width:0px;
 	top:25vh;
 	display:grid;
 	width:100%;
+	padding-bottom:200px;
 	
 }
 
@@ -154,12 +155,19 @@ width:0px;
 .font1{font-family:"Space Mono";}
 .font2{font-family:"Open Sans";
 font-weight:500;}
+
 .font3{font-family:"Playfair Display";
 font-weight:500;}
 
+
+
 .font4{font-family:"Playfair Display";
 	font-style: italic;
+	
 font-weight:500;}
+
+.font5{font-family:"Playfair Display";
+font-weight:700;}
 
 
 .followCursor{
@@ -180,28 +188,28 @@ font-weight:500;}
 	top:0;
 }
 
-.hudOutline{
-	position: -webkit-sticky;
-	position:sticky;
-	width:95%;
-	height:95vh;
-	margin-left:auto;
-	margin-right:auto;
+.Outline{
+	position: -webkit-fixed;
+	position:fixed;
+	width:95vw;
+	height:90vh;
+	margin-left:2.5vw;
 	margin-top:2.5vh;
 	border:2px solid black;
 	color:black;
 	top:2.5vh;
 	mix-blend-mode:normal;
-	z-index:5;
-
+	z-index:1;
 }
 
 
 .navwrapper{
-	width:95%;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:2.5vh;
+	position: -webkit-fixed;
+	position:fixed;
+	width:90%;
+	margin-left:5vw;
+	top:5vh;
+	z-index:5;
 
 }
 
@@ -227,14 +235,22 @@ font-weight:500;}
 }
 
 .coordinates{
-	font-size:6em;
+	position:fixed;
+	font-size:2em;
 	line-height:0.9em;
-	bottom:2.5vw;
-	position:absolute;
-	left:2.5vw;
+	bottom:5vw;
+	left:5vw;
 	
 }
 
+.contactInfo{
+	position:fixed;
+	font-size:4em;
+	line-height:0.9em;
+	bottom:5vw;
+	right:5vw;
+	
+}
 .coordinateX{
 	font-size:1em;
 	display:inline-block;
@@ -628,8 +644,13 @@ strong{
 	.websiteContainer{
 		overflow:hidden;
 	}
-	.hudOutline{
+	.Outline{
 		border:none;
+	}
+	
+	.contactInfo{
+		display:none;
+		
 	}
 	
 	
