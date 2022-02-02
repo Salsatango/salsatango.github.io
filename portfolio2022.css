@@ -79,7 +79,8 @@ nav{
 	background-color:black;
 	z-index:6;
 	mix-blend-mode:normal;
-	overflow:scroll;
+	overflow-y:scroll;
+	overflow-x:hidden;
 	overscroll-behavior: contain;
 }
 
@@ -116,13 +117,14 @@ width:0px;
 	top:25vh;
 	display:grid;
 	width:100%;
-	padding-bottom:200px;
+	padding-bottom:300px;
 	
 }
 
 
 .navMenu article{
 	height:16vh;
+	min-height:100px;
 	width:100%;
 	font-size:9em;
 	padding-left:35px;
@@ -130,6 +132,19 @@ width:0px;
 	line-height:15vh;
 	color:white;
 	border-bottom:1px solid white;
+	overflow-x:scroll;
+	overflow-y:hidden;
+	
+
+	
+}
+
+.navMenu article::-webkit-scrollbar {
+	width:0;
+	height:0;}
+
+.navMenuDiv{
+	width:100%;
 }
 
 .menuFixedPages{
@@ -167,6 +182,10 @@ font-weight:500;}
 font-weight:500;}
 
 .font5{font-family:"Playfair Display";
+font-weight:700;}
+
+.font6{font-family:"Playfair Display";
+	font-style: italic;
 font-weight:700;}
 
 
@@ -354,11 +373,11 @@ font-weight:700;}
 
 /*for the text that scrolls by itself*/
 .animatedScrollingTextContainer{
-	font-size:12em;
+	font-size:20em;
 	-webkit-text-stroke-width: 1px;
   	-webkit-text-stroke-color: black;
 	mix-blend-mode: darken;
-	height:200px;
+	height:400px;
 	overflow-x:scroll;
 	overflow-y:hidden;
 }
@@ -433,105 +452,6 @@ article:hover{
 	
 	z-index:2;
 }
-
-
-
-/*This is for the individual pages*/
-.topBar{
-	height:25px;
-	width:100vw;
-	position:fixed;
-	top:0;
-	z-index:2;
-	background-color:white;}
-
-.bottomBar{
-	height:25px;
-	width:100vw;
-	position:fixed;
-	z-index:2;
-	bottom:0;
-	background-color:white;}
-
-.trigger{
-	position:absolute;
-	height:300vh;
-	margin-top:90vh;
-}
-
-.titleSection{
-	grid-column:1/7;
-	font-size:6em;
-	margin-top:25px;
-	margin-bottom:25px;
-	line-height:1.1em;
-}
-
-.dateSection{
-	grid-column:1/5;
-	font-size:1.3em;
-	margin-bottom:25px;}
-
-.descriptionSection{
-	grid-column:1/7;
-	font-size:1.1em;
-	margin-bottom:50px;}
-
-.picturesSection{
-	grid-column:1/13;
-	transition-duration:500ms;
-}
-
-.picturesSection img{
-	width:100%;
-	margin-bottom:50px;
-	mix-blend-mode:multiply;
-	transition-duration:400ms;
-	cursor:pointer;
-	}
-
-.fullHeightScrollingTextContainer{
-	position:fixed;
-	top:0;
-	overflow-x:scroll;
-	overflow-y:hidden;
-	z-index:-1;
-	height:100%;
-	transition-duration:400ms;
-	
-}
-
-.fullHeightScrollingText{
-	color:transparent;
-	height:100%;
-	font-size:90vh;
-	line-height:95%;
-	padding-right:100px;
-	padding-left:100px;
-	overflow-x:scroll;
-	overflow-y: hidden;
-	mix-blend-mode: darken;
-	-webkit-text-stroke-width: 1px;
-  	-webkit-text-stroke-color: black;}
-
-.fullHeightScrollingTextContainer::-webkit-scrollbar {height:0;}
-.fullHeightScrollingText::-webkit-scrollbar {height:0;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*modifiers*/
 
@@ -635,7 +555,7 @@ strong{
 
 /*for mobile*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
     .followCursor{
 	display:none;
@@ -653,7 +573,6 @@ strong{
 		
 	}
 	
-	
 .menuIcon{
 	position:relative;
 	float:right;
@@ -661,7 +580,6 @@ strong{
 	right:0;
 	font-size:4em;
 	z-index:5;
-	
 	
 }
 
@@ -675,7 +593,15 @@ strong{
 	top:0;
 	float:left;
 }
+.navClose{
+	position:fixed;
+	top:3.5vh;
+	right:4.5vw;
+	font-size:4em;
+	color:white;
+	z-index:6;
 	
+}
 	.coordinates{
 	display:none;
 }
@@ -691,6 +617,48 @@ strong{
 	margin-bottom:20px;
 }
 
+	
+
+	.navMenuDiv{
+	width:100%;
+	}
+	
+	
+	.navMenu{
+	position:absolute;
+	top:25vh;
+	display:grid;
+	width:100%;
+	padding-bottom:300px;
+	
+}
+
+	.nav{
+		width:100vw;
+	}
+.navMenu article{
+	height:10vh;
+	min-height:70px;
+	width:100%;
+	font-size:3em;
+	line-height:10vh;
+
+}
+
+
+.navMenuDiv{
+	width:100%!important;
+}
+
+.menuFixedPages{
+	height:10vh;
+	min-height:70px;
+	width:100%;
+	font-size:3em;
+	line-height:10vh;
+
+}
+	
 .heroText2{
 	margin-left:10%;
 	margin-right:auto;
@@ -731,4 +699,10 @@ strong{
 		z-index:-10!important;
 }
 }
-
+@media only screen and (max-width: 1600px) {
+	.navMenuDiv{
+	width:150%;
+}
+	
+	
+}

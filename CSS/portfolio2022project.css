@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+/*This is for the individual pages*/
+.topBar{
+	height:25px;
+	width:100vw;
+	position:fixed;
+	top:0;
+	z-index:2;
+	background-color:white;}
+
+.bottomBar{
+	height:25px;
+	width:100vw;
+	position:fixed;
+	z-index:2;
+	bottom:0;
+	background-color:white;}
+
+.trigger{
+	position:absolute;
+	height:300vh;
+	margin-top:90vh;
+}
+
+.titleSection{
+	grid-column:1/7;
+	font-size:6em;
+	margin-top:15vh;
+	margin-bottom:25px;
+	line-height:1.1em;
+}
+
+.dateSection{
+	grid-column:1/5;
+	font-size:1.3em;
+	margin-bottom:25px;}
+
+.descriptionSection{
+	grid-column:1/7;
+	font-size:1.1em;
+	margin-bottom:50px;}
+
+.picturesSection{
+	grid-column:1/13;
+	transition-duration:500ms;
+}
+
+.picturesSection img{
+	width:100%;
+	margin-bottom:50px;
+	mix-blend-mode:multiply;
+	transition-duration:400ms;
+	cursor:pointer;
+	}
+
+.fullHeightScrollingTextContainer{
+	position:fixed;
+	top:0;
+	overflow-x:scroll;
+	overflow-y:hidden;
+	z-index:-1;
+	height:100%;
+	transition-duration:400ms;
+	
+}
+
+.fullHeightScrollingText{
+	color:transparent;
+	height:100%;
+	font-size:90vh;
+	line-height:95%;
+	padding-right:100px;
+	padding-left:100px;
+	overflow-x:scroll;
+	overflow-y: hidden;
+	mix-blend-mode: darken;
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;}
+
+.fullHeightScrollingTextContainer::-webkit-scrollbar {height:0;}
+.fullHeightScrollingText::-webkit-scrollbar {height:0;}
+
+
+@media only screen and (max-width: 700px) {
+	
+	
+	.fullHeightScrollingTextContainer{
+		display:none;
+	}
+	.titleSection{
+		
+	grid-column:2/12;
+	font-size:4em;
+	margin-top:15vh;
+	margin-bottom:25px;
+	line-height:1.1em;
+}
+
+.dateSection{
+	grid-column:2/12;
+	font-size:1.3em;
+	margin-bottom:25px;}
+
+.descriptionSection{
+	grid-column:2/12;
+	font-size:1.1em;
+	margin-bottom:50px;}
+	
+	.picturesSection{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+
+	}
+	
+}

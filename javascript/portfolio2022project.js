@@ -251,10 +251,7 @@ function unhighlight(element){
 
 
 
-
-
-
-//for the Nav menu
+//for the nav
 
 function createMenuArticles (){
 	for(d=0; d<numberOfEntries; d++){
@@ -278,6 +275,8 @@ var allMenuSections = document.querySelectorAll('.navMenu article');
 //this gives an unique numbered class to the divs created.
 			
 			allMenuSections[y].appendChild(newDiv).className = ("menuTitle" + (y+1));
+			let currentMenuSection = document.querySelector(".menuTitle" + CSS.escape(y+1));
+			currentMenuSection.classList.add("navMenuDiv");
 			
 			y++;
 			//console.log(y);
@@ -317,6 +316,56 @@ let allMenuSections = document.querySelectorAll('.navMenu article');
 }
 }
 
+
+
+
+//make the articles clickable. They go to the right pages when clicked
+function createMenuLinks (){
+	var allSections = document.querySelectorAll('.navMenu article');
+	//console.log(allSections);
+	var projectsIndex = [];
+				
+	
+	for (var z in entriesInfo.projects) {
+				projectsIndex.push(z);
+				//console.log(projectsIndex);
+				};
+
+
+	for (let w = 0; w < allSections.length; w++){
+
+		let currentProjectName = projectsIndex[w];
+		let currentArticle = document.getElementsByClassName("menu"+(w + 1));
+
+		
+//getElementsByClassName returns html collection, so if you need to add event Listener to an element, you will need to do something like following: currentArticle[0].addEventListener('click', ConsoleLogs);
+		
+		//console.log(currentArticle[0]);
+		//console.log(projectsIndex[w]);
+		//console.log(currentProjectName);
+		
+			
+		
+		currentArticle[0].addEventListener('click', function navigateTo(){
+			window.location.href = currentProjectName + ".html";});
+
+		}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	function menu(){
 let navMenu = document.querySelector(".nav");
 	console.log(navMenu);
@@ -326,17 +375,72 @@ let closeMenu = document.querySelector(".navClose")
 openMenu.addEventListener('click', function uncollapseMenu(){
 uncollapse(navMenu);
 uncollapse(closeMenu);
-console.log("open");
+
 														}
 						)
 closeMenu.addEventListener('click', function collapseMenu(){
 collapse(navMenu);
 collapse(closeMenu);
-console.log("close");
+
 
 }
 						)
 }
+
+
+
+
+document.querySelector(".nav").onscroll = function(){menuScroll();}
+
+
+function menuScroll(){
+	let menuScrollSections = document.querySelectorAll(".navMenu article");
+//you have to initialize a variable before using it.
+	console.log(menuScrollSections);
+
+	
+menuScrollSections.forEach
+	(function scroll2(element) {
+		let x = element.scrollWidth;
+		console.log("x" + " " + x);
+//The Element.scrollWidth read-only property is a measurement of the width of an element's content, including content not visible on the screen due to overflow.
+		let y = document.documentElement.clientHeight;
+		console.log("clientHeight y" + " " + y);
+//Document.documentElement returns the Element that is the root element of the document (for example, the <html> element for HTML documents).
+		let h = document.querySelector(".nav");
+		
+		let a = h.scrollTop;
+		console.log("scrollTop a" + " "+ a);
+//The Element.scrollTop property gets or sets the number of pixels that an element's content is scrolled vertically.
+		let b = element.offsetTop;
+		console.log("offsetTop b" + " " + b);
+	
+		let g = h.scrollHeight;
+		console.log("scrollheight g" + " " + g);
+
+		let d=0;
+		if (((a+y)>b) && (a>0)) {
+			
+		d = (a+y-b-400);
+		
+		}
+		else{
+		d = 0;}
+
+		//console.log("d" + " " + d);
+// d is what fraction of the clientheight has been scrolled
+		if(b>y){
+			element.scrollLeft = (d/(y)*x);
+		console.log(element.scrollLeft);
+		}
+		else{
+			element.scrollLeft = (a/(b)*x);
+			console.log(element.scrollLeft);
+			
+		}
+
+
+})}
 
 
 
