@@ -462,7 +462,7 @@ strong{
 
 .background{
 	position:fixed;
-	z-index:-1;
+	z-index:0;
 	background-color: black;
 	width:100vw;
 	height:100vh;
@@ -471,9 +471,10 @@ strong{
 	transition-duration:200ms;
 	cursor: zoom-out;
 }
+
 .opaque{
 	opacity:100;
-	z-index:3;
+	z-index:6;
 	transition-duration:200ms;
 }
 
@@ -529,13 +530,14 @@ strong{
 	transition-duration:200ms;
 }
 .focused{
+	z-index:10;
 	
 }
 
 .focused img{
 	position: fixed;
 	height:90vh;
-	width:auto;
+	width:auto!important;
 	display: block;
 	
 	top:5vh;
@@ -545,10 +547,8 @@ strong{
     margin-left: auto;
     margin-right: auto;
 	
-	
-	
 	z-index:10;
-	mix-blend-mode:normal;
+	mix-blend-mode:normal!important;
 	transition-duration:300ms;
 	
 	cursor:crosshair;
