@@ -264,7 +264,7 @@ font-weight:700;}
 
 .contactInfo{
 	position:fixed;
-	font-size:4em;
+	font-size:2em;
 	line-height:0.9em;
 	bottom:5vw;
 	right:5vw;
@@ -299,7 +299,7 @@ font-weight:700;}
 .heroText{
 	margin-left:5%;
 	margin-right:auto;
-	margin-top:25vh;
+	margin-top:30vh;
 	margin-bottom:50px;
 
 }
@@ -367,7 +367,6 @@ font-weight:700;}
 	mix-blend-mode: darken;
 	-webkit-text-stroke-width: 1px;
   	-webkit-text-stroke-color: black;
-	
 
 }
 
@@ -601,7 +600,7 @@ strong{
 	right:4.5vw;
 	font-size:4em;
 	color:white;
-	z-index:6;
+	z-index:11;
 	
 }
 	.coordinates{

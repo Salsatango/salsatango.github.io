@@ -251,7 +251,7 @@ collapse(closeMenu);
 
 
 
-
+/*
 document.querySelector(".nav").onscroll = function(){menuScroll();}
 
 
@@ -307,7 +307,7 @@ menuScrollSections.forEach
 
 
 
-
+*/
 
 
 

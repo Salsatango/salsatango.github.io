@@ -1,7 +1,7 @@
 window.onload = function(){getTitle(); createPictureDivs();numberChildren() ;populateImages();focusOnImage();unfocusOnImage();createObserver();
 						  
 						  
-						  createMenuArticles ();numberMenuChildren();populatemenuContent();menu();}
+						  createMenuArticles ();numberMenuChildren();populatemenuContent();menu();createMenuLinks (); linkIcon();}
 
 
 
@@ -194,7 +194,7 @@ function createObserver() {
   let options = {
     root: null,
     rootMargin: "0px",
-    threshold: 1
+    threshold: 0.1
   };
 	//I think you can replace "observer" here with any name. this one executes the function "ayy" when the threshhold specified in options is crossed.
 	
@@ -387,6 +387,13 @@ collapse(closeMenu);
 						)
 }
 
+
+
+function linkIcon() {
+	let websiteIcon = document.querySelector(".websiteIcon");
+	websiteIcon.addEventListener("click", function navigateTo(){
+			window.location.href = "index.html";});
+}
 
 
 /*
