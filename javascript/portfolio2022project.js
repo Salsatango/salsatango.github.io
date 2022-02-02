@@ -389,7 +389,7 @@ collapse(closeMenu);
 
 
 
-
+/*
 document.querySelector(".nav").onscroll = function(){menuScroll();}
 
 
@@ -421,7 +421,7 @@ menuScrollSections.forEach
 		let d=0;
 		if (((a+y)>b) && (a>0)) {
 			
-		d = (a+y-b-400);
+		d = (a+y-b-200);
 		
 		}
 		else{
@@ -441,6 +441,6 @@ menuScrollSections.forEach
 
 
 })}
-
+*/
 
 
