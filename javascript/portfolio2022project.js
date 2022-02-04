@@ -370,21 +370,29 @@ function createMenuLinks (){
 let navMenu = document.querySelector(".nav");
 	console.log(navMenu);
 let openMenu = document.querySelector(".menuIcon");
-let closeMenu = document.querySelector(".navClose")
+let closeMenu = document.querySelector(".navClose");
+let menuBackground = document.querySelector(".menuBackground");
  
 openMenu.addEventListener('click', function uncollapseMenu(){
 uncollapse(navMenu);
 uncollapse(closeMenu);
+toFront(menuBackground);
 
 														}
 						)
 closeMenu.addEventListener('click', function collapseMenu(){
 collapse(navMenu);
 collapse(closeMenu);
-
-
+toBack( menuBackground);
 }
 						)
+		
+		
+ menuBackground.addEventListener("click", function collapseMenu(){
+collapse(navMenu);
+collapse(closeMenu);
+toBack(menuBackground);
+})
 }
 
 
@@ -394,6 +402,25 @@ function linkIcon() {
 	websiteIcon.addEventListener("click", function navigateTo(){
 			window.location.href = "index.html";});
 }
+
+
+
+
+
+
+
+function toFront(element){
+	element.classList.add("toFront");
+}
+
+function toBack(element){
+	element.classList.remove("toFront");
+}
+
+
+
+
+
 
 
 /*

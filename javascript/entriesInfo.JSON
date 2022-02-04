@@ -1,29 +1,50 @@
 var entriesInfo = {"projects":{
-"bookshelf": {"title":"'Averell' Bookshelf", "date":"August 2021", "shortDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
-"pictures": {"picture1":"./Media/testPage/testPage1.jpg","picture2":"./Media/testPage/testPage2.jpg"}},
 
+
+
+"screenprints": {"title":"Screenprinting #1", "date":"December 2021", "shortDescription":"Series of screenprints on chiffon paper with CMYK process.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
+"pictures": {"picture1":"./Media/screenprints/screenprints1.jpg","picture2":"./Media/screenprints/screenprints2.jpg","picture3":"./Media/screenprints/screenprints3.jpg","picture4":"./Media/screenprints/screenprints4.jpg","picture5":"./Media/screenprints/screenprints5.jpg"}},
 	
-"jacket": {"title":"'Not Down With Down' Jacket", "date":"November 2019", "shortDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes f", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
+	
+"candles": {"title":"Candles", "date":"December 2021", "shortDescription":"Decorative candles made from beeswax and soy wax.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
+"pictures": {"picture1":"./Media/candles/candles1.jpg","picture2":"./Media/candles/candles2.jpg"}},
+	
+	
+"EIRBooklet": {"title":"'Kodak EIR' Booklet", "date":"October 2021", "shortDescription":"Booklet showcasing infrared photography shot with Kodak Ektachrome Infrared Film at the botanical gardens.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
+"pictures": {"picture1":"./Media/EIRBooklet/EIRBooklet1.jpg","picture2":"./Media/EIRBooklet/EIRBooklet2.jpg","picture3":"./Media/EIRBooklet/EIRBooklet3.jpg","picture4":"./Media/EIRBooklet/EIRBooklet4.jpg","picture5":"./Media/EIRBooklet/EIRBooklet5.jpg","picture6":"./Media/EIRBooklet/EIRBooklet6.jpg","picture7":"./Media/EIRBooklet/EIRBooklet7.jpg","picture8":"./Media/EIRBooklet/EIRBooklet8.jpg"}},
+	
+"cyanotypeBooklet": {"title":"'The Crystal Goblet' Booklet", "date":"September 2021", "shortDescription":"Exploration of typesetting and printing with the cyanotype process.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
+"pictures": {"picture1":"./Media/cyanotypeBooklet/cyanotypeBooklet1.jpg","picture2":"./Media/cyanotypeBooklet/cyanotypeBooklet2.jpg","picture3":"./Media/cyanotypeBooklet/cyanotypeBooklet3.jpg"}},
+	
+"bookshelf": {"title":"'Averell' Bookshelf", "date":"August 2021", "shortDescription":"Compact and light shelf.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
+"pictures": {"picture1":"./Media/bookshelf/bookshelf1.jpg","picture2":"./Media/bookshelf/bookshelf2.jpg","picture3":"./Media/bookshelf/bookshelf3.jpg","picture4":"./Media/bookshelf/bookshelf4.jpg","picture5":"./Media/bookshelf/bookshelf5.jpg"}},
+
+"coffeeTable": {"title":"'William' Coffee Table", "date":"July 2021", "shortDescription":"Small walnut midcentury-esque coffee table.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
+"pictures": {"picture1":"./Media/coffeeTable/coffeeTable1.jpg","picture2":"./Media/coffeeTable/coffeeTable2.jpg","picture3":"./Media/coffeeTable/coffeeTable3.jpg"}},
+	
+"soap": {"title":"'Le Laurentien' savon de Castille", "date":"June 2021", "shortDescription":"Developping a formula and branding for a handmade soap.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
 "pictures": {"picture1":"./Media/testPage/testPage1.jpg","picture2":"./Media/testPage/testPage2.jpg"}},
 
-"cyanotypeBooklet": {"title":"'The Crystal Goblet' Booklet", "date":"September 2021", "shortDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from s", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
-"pictures": {"picture1":"./Media/testPage/testPage1.jpg","picture2":"./Media/testPage/testPage2.jpg"}},
-
-"coffeeTable": {"title":"'William' Coffee Table", "date":"July 2021", "shortDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
-"pictures": {"picture1":"./Media/testPage/testPage1.jpg","picture2":"./Media/testPage/testPage2.jpg"}},
-
-"EIRBooklet": {"title":"'Kodak EIR' Booklet", "date":"October 2021", "shortDescription":"through the cites of the wo", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
-"pictures": {"picture1":"./Media/testPage/testPage1.jpg","picture2":"./Media/testPage/testPage2.jpg"}},
-
-"screenprints": {"title":"Adventures in screenprinting", "date":"December 2021", "shortDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lor", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
-"pictures": {"picture1":"./Media/testPage/testPage1.jpg","picture2":"./Media/testPage/testPage2.jpg"}},
-
-"cabinetAndNightstand": {"title":"'Joe and Jack' Small Furniture", "date":"January 2021", "shortDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem I", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
+"cabinetAndNightstand": {"title":"'Joe and Jack' Small Furniture", "date":"January 2021", "shortDescription":"Minimalist nightstand with drawer and small cabinet with slatted sliding doors.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
 "pictures": {"picture1":"./Media/testPage/testPage1.jpg","picture2":"./Media/testPage/testPage2.jpg"}},
 	
-"stolichnaya": {"title":"'Stolichnaya' label", "date":"December 2019", "shortDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
-"pictures": {"picture1":"./Media/stolichnaya/stolichnaya1.jpg","picture2":"./Media/stolichnaya/stolichnaya2.jpg"}},
+"CCA": {"title":"CCA charette", "date":"2019-2020", "shortDescription":"Ideations for CCA charettes", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
+"pictures": {"picture1":"./Media/CCA/CCA1.jpg","picture2":"./Media/CCA/CCA2.jpg","picture3":"./Media/CCA/CCA3.jpg"}},
 	
-"pageTemplate": {"title":"This is the title Bl", "date":"January 2021", "shortDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ip", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
-"pictures": {"picture1":"./Media/testPage/testPage1.jpg","picture2":"./Media/testPage/testPage2.jpg"}}
+"stolichnaya": {"title":"'Stolichnaya' label", "date":"December 2019", "shortDescription":"Exercice in designing a fictional mixed drinks for Stolichnaya.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
+"pictures": {"picture1":"./Media/stolichnaya/stolichnaya1.jpg","picture2":"./Media/stolichnaya/stolichnaya2.jpg","picture3":"./Media/stolichnaya/stolichnaya3.jpg","picture4":"./Media/stolichnaya/stolichnaya4.jpg"}},	
+	
+"jacket": {"title":"'Not Down With Down' Jacket", "date":"November 2019", "shortDescription":"Designing, making and developping a brand for a vest with natural materials.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
+"pictures": {"picture1":"./Media/jacket/jacket1.jpg","picture2":"./Media/jacket/jacket2.jpg","picture3":"./Media/jacket/jacket3.jpg","picture4":"./Media/jacket/jacket4.jpg","picture5":"./Media/jacket/jacket5.jpg"}},
+	
+"jacket": {"title":"'Not Down With Down' Jacket", "date":"November 2019", "shortDescription":"Designing, making and developping a brand for a vest with natural materials.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
+"pictures": {"picture1":"./Media/jacket/jacket1.jpg","picture2":"./Media/jacket/jacket2.jpg","picture3":"./Media/jacket/jacket3.jpg","picture4":"./Media/jacket/jacket4.jpg","picture5":"./Media/jacket/jacket5.jpg"}},
+
+
+
+
+
+
+
+
 }}

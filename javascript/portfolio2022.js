@@ -232,21 +232,30 @@ function createMenuLinks (){
 let navMenu = document.querySelector(".nav");
 	console.log(navMenu);
 let openMenu = document.querySelector(".menuIcon");
-let closeMenu = document.querySelector(".navClose")
+let closeMenu = document.querySelector(".navClose");
+let background = document.querySelector(".background");
  
 openMenu.addEventListener('click', function uncollapseMenu(){
 uncollapse(navMenu);
 uncollapse(closeMenu);
+toFront(background);
 
 														}
 						)
 closeMenu.addEventListener('click', function collapseMenu(){
 collapse(navMenu);
 collapse(closeMenu);
-
-
+toBack(background);
 }
 						)
+		
+		
+		
+background.addEventListener("click", function collapseMenu(){
+collapse(navMenu);
+collapse(closeMenu);
+toBack(background);
+})
 }
 
 
@@ -520,12 +529,14 @@ function hoverImages(){
 			{
 			cursorFollower.style.backgroundImage = "url("+imageURL+")";
 			cursorFollower.style.opacity = "100";
+			appear(cursorFollower);
 			}
 										  );
 			
 			allSectionsBlock.addEventListener('mouseleave', function hideImage()
 			{
 			cursorFollower.style.opacity = "0";
+				fadeOut(cursorFollower);
 			}
 										  );
 //If I wanted to use a function to highlight instead of article:hover
@@ -628,6 +639,21 @@ function disappear(entries, Observer2){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function ConsoleLogs(){
 	console.log("there are" + " " + numberOfEntries + " "+ "entries");
 
@@ -647,6 +673,7 @@ function appear(element){
 	element.classList.remove("hidden");
 }
 
+
 function fadeOut(element){
 	element.classList.add("hidden");
 }
@@ -657,4 +684,13 @@ function highlight(element){
 
 function unhighlight(element){
 	element.classList.remove("highlighted");
+}
+
+
+function toFront(element){
+	element.classList.add("toFront");
+}
+
+function toBack(element){
+	element.classList.remove("toFront");
 }

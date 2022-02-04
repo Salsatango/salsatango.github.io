@@ -17,6 +17,19 @@
 	bottom:0;
 	background-color:white;}
 
+.menuBackground{
+	position:fixed;
+	z-index:-1;
+	background-color: black;
+	width:100vw;
+	height:100vh;
+	top:0;
+	opacity:0;
+	transition-duration:200ms;
+	cursor: zoom-out;
+	
+}
+
 .trigger{
 	position:absolute;
 	height:300vh;
