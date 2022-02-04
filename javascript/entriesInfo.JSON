@@ -26,7 +26,7 @@ var entriesInfo = {"projects":{
 "pictures": {"picture1":"./Media/testPage/testPage1.jpg","picture2":"./Media/testPage/testPage2.jpg"}},
 
 "cabinetAndNightstand": {"title":"'Joe and Jack' Small Furniture", "date":"January 2021", "shortDescription":"Minimalist nightstand with drawer and small cabinet with slatted sliding doors.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
-"pictures": {"picture1":"./Media/testPage/testPage1.jpg","picture2":"./Media/testPage/testPage2.jpg"}},
+"pictures": {"picture1":"./Media/cabinetAndNightstand/cabinetAndNightstand1.jpg","picture2":"./Media/cabinetAndNightstand/cabinetAndNightstand2.jpg","picture3":"./Media/cabinetAndNightstand/cabinetAndNightstand3.jpg"}},
 	
 "CCA": {"title":"CCA charette", "date":"2019-2020", "shortDescription":"Ideations for CCA charettes", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
 "pictures": {"picture1":"./Media/CCA/CCA1.jpg","picture2":"./Media/CCA/CCA2.jpg","picture3":"./Media/CCA/CCA3.jpg"}},
