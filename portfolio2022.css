@@ -584,6 +584,8 @@ strong:hover{
 
 @media only screen and (max-width: 700px) {
 
+	
+	
     .followCursor{
 	display:none;
 
@@ -599,6 +601,13 @@ strong:hover{
 		display:none;
 		
 	}
+	
+	
+	.navwrapper{
+
+	z-index:9;
+
+}
 	
 .menuIcon{
 	position:relative;
@@ -670,7 +679,7 @@ strong:hover{
 	height:10vh;
 	min-height:70px;
 	width:100%;
-	font-size:3em;
+	font-size:2em!important;
 	line-height:10vh;
 
 }
@@ -684,7 +693,7 @@ strong:hover{
 	height:10vh;
 	min-height:70px;
 	width:100%;
-	font-size:3em;
+	font-size:2em!important;
 	line-height:10vh;
 
 }
@@ -726,8 +735,8 @@ strong:hover{
 	.hidden{opacity:100;
 		transition-duration:400ms;
 		transition-timing-function:ease-in;
-		z-index:-10!important;
 }
+	
 }
 
 
