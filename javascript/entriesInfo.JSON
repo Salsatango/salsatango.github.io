@@ -34,6 +34,9 @@ var entriesInfo = {"projects":{
 "stolichnaya": {"title":"'Stolichnaya' label", "date":"December 2019", "shortDescription":"Exercice in designing a fictional mixed drinks for Stolichnaya.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
 "pictures": {"picture1":"./Media/stolichnaya/stolichnaya1.jpg","picture2":"./Media/stolichnaya/stolichnaya2.jpg","picture3":"./Media/stolichnaya/stolichnaya3.jpg","picture4":"./Media/stolichnaya/stolichnaya4.jpg"}},	
 	
+"JAGDA": {"title":"JADGA 2019 entry", "date":"November 2019", "shortDescription":"I made these posters for the Japan Graphic Designers Association's student poster contest. ", "longDescription":"I made these posters for the Japan Graphic Designers Association's student poster contest. ",
+"pictures": {"picture1":"./Media/JAGDA/JAGDA1.jpg","picture2":"./Media/JAGDA/JAGDA2.jpg","picture3":"./Media/JAGDA/JAGDA3.jpg"}},	
+	
 "jacket": {"title":"'Not Down With Down' Jacket", "date":"November 2019", "shortDescription":"Designing, making and developping a brand for a vest with natural materials.", "longDescription":"through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Ev",
 "pictures": {"picture1":"./Media/jacket/jacket1.jpg","picture2":"./Media/jacket/jacket2.jpg","picture3":"./Media/jacket/jacket3.jpg","picture4":"./Media/jacket/jacket4.jpg","picture5":"./Media/jacket/jacket5.jpg"}},
 	
