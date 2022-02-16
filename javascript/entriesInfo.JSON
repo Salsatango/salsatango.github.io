@@ -22,8 +22,7 @@ var entriesInfo = {"projects":{
 "coffeeTable": {"title":"'William' Coffee Table", "date":"July 2021", "shortDescription":"Small walnut midcentury-esque coffee table  ⟶ Woodwork, Photography", "longDescription":"This is just a cool coffee table I made. I think the black walnut's pattern is so striking that it hides or overshadows any imperfection in the woodwork.",
 "pictures": {"picture1":"./Media/coffeeTable/coffeeTable1.jpg","picture2":"./Media/coffeeTable/coffeeTable2.jpg","picture3":"./Media/coffeeTable/coffeeTable3.jpg"}},
 	
-"soap": {"title":"'Le Laurentien' savon de Castille", "date":"June 2021", "shortDescription":"Developping a formula and branding for a handmade soap ⟶ Branding, Digital Print, Photography", "longDescription":"Regular soap was getting my face really dry, and the high quality ones were too expensive. I decided to make my own soap, and used it as a design exercice. For the label, I carved a cedar leaf into a potato, and used it to stamp some interesting patterns.",
-"pictures": {"picture1":"./Media/testPage/testPage1.jpg","picture2":"./Media/testPage/testPage2.jpg"}},
+
 
 "cabinetAndNightstand": {"title":"'Joe and Jack' Small Furniture", "date":"January 2021", "shortDescription":"Minimalist nightstand with drawer and small cabinet with slatted sliding doors  ⟶ Woodwork ", "longDescription":"Here are two pieces of furniture I made. The design is very minimalistic. I used slats both to save on materials and to create an interesting visual effect.",
 "pictures": {"picture1":"./Media/cabinetAndNightstand/cabinetAndNightstand1.jpg","picture2":"./Media/cabinetAndNightstand/cabinetAndNightstand2.jpg","picture3":"./Media/cabinetAndNightstand/cabinetAndNightstand3.jpg"}},
