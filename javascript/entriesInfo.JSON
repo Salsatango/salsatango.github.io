@@ -32,7 +32,7 @@ var entriesInfo = {"projects":{
 "pictures": {"picture1":"./Media/CCA/CCA2.jpg","picture2":"./Media/CCA/CCA3.jpg","picture3":"./Media/CCA/CCA4.jpg"}},
 	
 "stolichnaya": {"title":"'Stolichnaya' label", "date":"December 2019", "shortDescription":"Exercice in designing a fictional mixed drinks for Stolichnaya ⟶ Graphic Design", "longDescription":"This is a fictional label for the vodka brand 'Stolichnaya.' In this quasi-dystopian near future, Stolichnaya has been bought by Pepsico, and starts producing mixed drinks in individual bottles. In an effort to rejuvenate their brand and appeal to a new Canadian demographic, the labels are designed in a style that blends modernity and an artisanal aesthetic. This project was a good opportunity to use the transparency of the paper and the interesting diffractive properties of glass. ",
-"pictures": {"picture1":"./Media/stolichnaya/stolichnaya1.jpg","picture2":"./Media/stolichnaya/stolichnaya2.jpg","picture3":"./Media/stolichnaya/stolichnaya3.jpg","picture4":"./Media/stolichnaya/stolichnaya4.jpg"}},	
+"pictures": {"picture1":"./Media/stolichnaya/stolichnaya1.jpg","picture2":"./Media/stolichnaya/stolichnaya.jpg", "picture3":"./Media/stolichnaya/stolichnaya3.jpg", "picture4":"./Media/stolichnaya/stolichnaya4.jpg"}},	
 	
 "JAGDA": {"title":"JADGA 2019 entry", "date":"November 2019", "shortDescription":"Posters for the Japan Graphic Designers Association's student poster contest ⟶ Graphic Design ", "longDescription":" The theme of the poster competition was 'Money'.",
 "pictures": {"picture1":"./Media/JAGDA/JAGDA1.jpg","picture2":"./Media/JAGDA/JAGDA2.jpg","picture3":"./Media/JAGDA/JAGDA3.jpg"}},	
