@@ -6,7 +6,7 @@ var entriesInfo = {"projects":{
 "pictures": {"picture1":"./Media/screenprints/screenprints1.jpg","picture2":"./Media/screenprints/screenprints2.jpg","picture3":"./Media/screenprints/screenprints3.jpg","picture4":"./Media/screenprints/screenprints4.jpg","picture5":"./Media/screenprints/screenprints5.jpg"}},
 	
 	
-"candles": {"title":"Candles + vaporwave", "date":"December 2021", "shortDescription":"Decorative candles and quick sketching exploration of the vaporwave style  ⟶ 3D printing, Moldmaking, Graphic Design", "longDescription":"I modified 3D scans of two statues: 'Le Réveil' by Laurent-Honoré Marqueste, and 'The Greek Slave' by Hiram Powers so they could be made into wax statues. I guess it's somewhat iconoclastic.",
+"candles": {"title":"Candles + vaporwave sketches", "date":"December 2021", "shortDescription":"Decorative candles and quick sketching exploration of the vaporwave aesthetic  ⟶ 3D printing, Moldmaking, Graphic Design", "longDescription":"I modified 3D scans of two statues: 'Le Réveil' by Laurent-Honoré Marqueste, and 'The Greek Slave' by Hiram Powers so they could be made into wax statues. I guess it's somewhat iconoclastic.",
 "pictures": {"picture1":"./Media/candles/candles1.jpg","picture2":"./Media/candles/candles2.jpg","picture3":"./Media/candles/candles3.jpg","picture4":"./Media/candles/candles4.jpg"}},
 	
 	
