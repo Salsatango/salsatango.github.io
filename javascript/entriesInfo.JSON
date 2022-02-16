@@ -23,7 +23,6 @@ var entriesInfo = {"projects":{
 "pictures": {"picture1":"./Media/coffeeTable/coffeeTable1.jpg","picture2":"./Media/coffeeTable/coffeeTable2.jpg","picture3":"./Media/coffeeTable/coffeeTable3.jpg"}},
 	
 
-
 "cabinetAndNightstand": {"title":"'Joe and Jack' Small Furniture", "date":"January 2021", "shortDescription":"Minimalist nightstand with drawer and small cabinet with slatted sliding doors  ⟶ Woodwork ", "longDescription":"Here are two pieces of furniture I made. The design is very minimalistic. I used slats both to save on materials and to create an interesting visual effect.",
 "pictures": {"picture1":"./Media/cabinetAndNightstand/cabinetAndNightstand1.jpg","picture2":"./Media/cabinetAndNightstand/cabinetAndNightstand2.jpg","picture3":"./Media/cabinetAndNightstand/cabinetAndNightstand3.jpg"}},
 	
