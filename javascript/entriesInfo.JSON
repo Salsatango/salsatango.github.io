@@ -10,7 +10,6 @@ var entriesInfo = {"projects":{
 "candles": {"title":"Candles + vaporwave sketches", "date":"December 2021", "shortDescription":"Decorative candles and quick sketching exploration of the vaporwave aesthetic  ⟶ 3D printing, Moldmaking, Graphic Design", "longDescription":"I modified 3D scans of two statues: 'Le Réveil' by Laurent-Honoré Marqueste, and 'The Greek Slave' by Hiram Powers so they could be made into wax statues. I guess it's somewhat iconoclastic.",
 "pictures": {"picture1":"./Media/candles/candles1.jpg","picture2":"./Media/candles/candles2.jpg","picture3":"./Media/candles/candles3.jpg","picture4":"./Media/candles/candles4.jpg"}},
 	
-	
 "EIRBooklet": {"title":"'Kodak EIR' Booklet", "date":"October 2021", "shortDescription":"Booklet showcasing infrared photography shot with Kodak Ektachrome Infrared Film ⟶ Graphic Design, Typesetting, Digital Printing ", "longDescription":"Thanks to Hugues Marceau for gifting me this roll of film.<br>Kodak Ektachrome Color Infrared Film, or Kodak EIR, was a film originally designed for aerial photography, specifically for military use. The chemistry of the film rendered infrared light as red. Plant life reflects a lot of infrared light, while things camouflaged as plants would not. I shot this roll of infrared film at the botanical gardens and at the Old Port, in Montréal. ",
 "pictures": {"picture1":"./Media/EIRBooklet/EIRBooklet1.jpg","picture2":"./Media/EIRBooklet/EIRBooklet2.jpg","picture3":"./Media/EIRBooklet/EIRBooklet3.jpg","picture4":"./Media/EIRBooklet/EIRBooklet4.jpg","picture5":"./Media/EIRBooklet/EIRBooklet5.jpg","picture6":"./Media/EIRBooklet/EIRBooklet6.jpg","picture7":"./Media/EIRBooklet/EIRBooklet7.jpg","picture8":"./Media/EIRBooklet/EIRBooklet8.jpg"}},
 	
@@ -19,12 +18,14 @@ var entriesInfo = {"projects":{
 	
 "bookshelf": {"title":"'Averell' Bookshelf", "date":"August 2021", "shortDescription":"Compact and light shelving system ⟶ 3D modeling, 3D rendering, Woodwork, Photography", "longDescription":"I made this bookshelf to be easily disassemblable, in prevision of moving appartments. I modeled it in Rhinoceros, and used Blender to render it in an environment. I also modeled some books to put in it.",
 "pictures": {"picture1":"./Media/bookshelf/bookshelf1.jpg","picture2":"./Media/bookshelf/bookshelf2.jpg","picture3":"./Media/bookshelf/bookshelf3.jpg","picture4":"./Media/bookshelf/bookshelf4.jpg","picture5":"./Media/bookshelf/bookshelf5.jpg"}},
+	
+	
+"soap": {"title":"'Le Laurentien' savon de Castille", "date":"July 2021", "shortDescription":"Developing a formula and branding for a handmade soap ⟶ Branding, Digital Print, Photography", "longDescription":"Regular soap was getting my face really dry, and the high quality ones were too expensive. I decided to make my own soap, and used it as a design exercise. For the label, I carved a cedar leaf into a potato, and used it to stamp some interesting patterns.",
+"pictures": {"picture1":"./Media/soap/soap1.jpg","picture2":"./Media/soap/soap2.jpg","picture3":"./Media/soap/soap3.jpg","picture4":"./Media/soap/soap4.jpg","picture5":"./Media/soap/soap5.jpg"}},
 
 "coffeeTable": {"title":"'William' Coffee Table", "date":"July 2021", "shortDescription":"Small walnut midcentury-esque coffee table  ⟶ Woodwork, Photography", "longDescription":"This is just a cool coffee table I made. I think the black walnut's pattern is so striking that it hides or overshadows any imperfection in the woodwork.",
 "pictures": {"picture1":"./Media/coffeeTable/coffeeTable1.jpg","picture2":"./Media/coffeeTable/coffeeTable2.jpg","picture3":"./Media/coffeeTable/coffeeTable3.jpg"}},
 
-"soap": {"title":"'Le Laurentien' savon de Castille", "date":"June 2021", "shortDescription":"Developing a formula and branding for a handmade soap ⟶ Branding, Digital Print, Photography", "longDescription":"Regular soap was getting my face really dry, and the high quality ones were too expensive. I decided to make my own soap, and used it as a design exercise. For the label, I carved a cedar leaf into a potato, and used it to stamp some interesting patterns.",
-"pictures": {"picture1":"./Media/soap/soap1.jpg","picture2":"./Media/soap/soap2.jpg","picture3":"./Media/soap/soap3.jpg","picture4":"./Media/soap/soap4.jpg","picture5":"./Media/soap/soap5.jpg"}},
 
 
 "cabinetAndNightstand": {"title":"'Joe and Jack' Small Furniture", "date":"January 2021", "shortDescription":"Minimalist nightstand with drawer and small cabinet with slatted sliding doors  ⟶ Woodwork ", "longDescription":"Here are two pieces of furniture I made. The design is very minimalistic. I used slats both to save on materials and to create an interesting visual effect.",
