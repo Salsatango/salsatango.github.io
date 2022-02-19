@@ -399,7 +399,12 @@ toBack(menuBackground);
 
 function linkIcon() {
 	let websiteIcon = document.querySelector(".websiteIcon");
+	let workInfo = document.querySelector(".workInfo");
+	
 	websiteIcon.addEventListener("click", function navigateTo(){
+			window.location.href = "index.html";});
+	
+	workInfo.addEventListener("click", function navigateTo(){
 			window.location.href = "index.html";});
 }
 
