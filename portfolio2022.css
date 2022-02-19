@@ -739,6 +739,7 @@ strong:hover{
 	.hidden{opacity:100;
 		transition-duration:400ms;
 		transition-timing-function:ease-in;
+		z-index:-10;
 }
 	
 }
