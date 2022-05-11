@@ -85,7 +85,10 @@ nav{
 }
 
 
-
+a {
+  color: red;
+	text-decoration: none;
+}
 
 .nav::-webkit-scrollbar {
   width: 0px!important;
