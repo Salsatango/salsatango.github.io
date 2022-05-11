@@ -85,10 +85,10 @@ enlargeMain();
 inflateGrid();
 collapseOverlay();
 setTimeout (showFirst,2000);
-setTimeout (showLine1,5000);
+setTimeout (showLine1,3000);
 setTimeout (showSecond,7000);
 setTimeout (showQuestion,19000);
-setTimeout (showButton1, 30000);
+setTimeout (showButton1, 23000);
 }
 
 //this is way more compact that the previous one. 
